@@ -73,7 +73,7 @@
 					<div class="clearfix">
 
 						<div class="pull-left logo-box">
-							<div class="logo"><a href="index-2.html"><img src="{% static 'images/logo-11.resized.png' %}" alt="" title=""></a>
+							<div class="logo"><a href="{% url 'index'  %}"><img src="{% static 'images/logo-11.resized.png' %}" alt="" title=""></a>
 							</div>
 						</div>
 
@@ -94,101 +94,101 @@
 
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 									<ul class="navigation clearfix">
-										<li class="current dropdown"><a href="#">Home</a>
-											<ul>
-												<li><a href="index-2.html">Home Page 01</a></li>
-												<li><a href="index-3.html">Home Page 02</a></li>
-												<li><a href="index-4.html">Home Page 03</a></li>
-												<li class="dropdown"><a href="#">Header Styles</a>
-													<ul>
-														<li><a href="index-2.html">Header Style 01</a></li>
-														<li><a href="index-3.html">Header Style 02</a></li>
-														<li><a href="index-4.html">Header Style 03</a></li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-										<li class="dropdown"><a href="#">About</a>
-											<ul>
-												<li><a href="about.html">About Us</a></li>
-												<li><a href="faq.html">Faq</a></li>
-												<li><a href="team.html">Team</a></li>
-												<li><a href="donation.html">Donation</a></li>
-												<li><a href="comming-soon.html">Comming Soon</a></li>
-												<li><a href="testimonial.html">Testimonial</a></li>
-											</ul>
-										</li>
-										<li class="dropdown"><a href="#">Events</a>
-											<ul>
-												<li><a href="events.html">Events</a></li>
-												<li><a href="events-detail.html">Events Detail</a></li>
-											</ul>
-										</li>
-										<li class="dropdown has-mega-menu"><a href="#">Projects</a>
-											<div class="mega-menu">
-												<div class="mega-menu-bar row clearfix">
-													<div class="column col-md-4 col-xs-12">
-														<h1>
-															<figure>
-																<img src="{% static 'images/logo-12.png' %}" alt="" />
-															</figure>
-														</h1>
-
-														
-														<h3>Project 1</h3>
-														<ul>
-															<li><a href="faq.html">Subproject 1</a></li>
-															<li><a href="team.html">Subproject 1</a></li>
-															<li><a href="donation.html">Subproject 1</a></li>
-															<li><a href="comming-soon.html">Subproject 1</a></li>
-															<li><a href="testimonial.html">Subproject 1</a></li>
-														</ul>
-													</div>
-													<div class="column col-md-4 col-xs-12">
-														<h1>
-															<figure>
-																<img src="{% static 'images/logo-12.png' %}" alt="" />
-															</figure>
-														</h1>
-
-														
-														<h3>Project 1</h3>
-														<ul>
-															<li><a href="faq.html">Subproject 1</a></li>
-															<li><a href="team.html">Subproject 1</a></li>
-															<li><a href="donation.html">Subproject 1</a></li>
-															<li><a href="comming-soon.html">Subproject 1</a></li>
-															<li><a href="testimonial.html">Subproject 1</a></li>
-														</ul>
-													</div>
-													<div class="column col-md-4 col-xs-12">
-														<h1>
-															<figure>
-																<img src="{% static 'images/logo-12.png' %}" alt="" />
-															</figure>
-														</h1>
-
-														
-														<h3>Project 1</h3>
-														<ul>
-															<li><a href="faq.html">Subproject 1</a></li>
-															<li><a href="team.html">Subproject 1</a></li>
-															<li><a href="donation.html">Subproject 1</a></li>
-															<li><a href="comming-soon.html">Subproject 1</a></li>
-															<li><a href="testimonial.html">Subproject 1</a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li class="dropdown"><a href="#">Blog</a>
-											<ul>
-												<li><a href="blog-classic.html">Blog Classic</a></li>
-												<li><a href="blog-single.html">Blog Single</a></li>
-												<li><a href="not-found.html">Not Found</a></li>
-											</ul>
-										</li>
-										<li><a href="contact.html">Contact us</a></li>
+{#										<li class="current dropdown"><a href="#">Home</a>#}
+{#											<ul>#}
+{#												<li><a href="index-2.html">Home Page 01</a></li>#}
+{#												<li><a href="index-3.html">Home Page 02</a></li>#}
+{#												<li><a href="index-4.html">Home Page 03</a></li>#}
+{#												<li class="dropdown"><a href="#">Header Styles</a>#}
+{#													<ul>#}
+{#														<li><a href="index-2.html">Header Style 01</a></li>#}
+{#														<li><a href="index-3.html">Header Style 02</a></li>#}
+{#														<li><a href="index-4.html">Header Style 03</a></li>#}
+{#													</ul>#}
+{#												</li>#}
+{#											</ul>#}
+{#										</li>#}
+{#										<li class="dropdown"><a href="#">About</a>#}
+{#											<ul>#}
+{#												<li><a href="about.html">About Us</a></li>#}
+{#												<li><a href="faq.html">Faq</a></li>#}
+{#												<li><a href="team.html">Team</a></li>#}
+{#												<li><a href="donation.html">Donation</a></li>#}
+{#												<li><a href="comming-soon.html">Comming Soon</a></li>#}
+{#												<li><a href="testimonial.html">Testimonial</a></li>#}
+{#											</ul>#}
+{#										</li>#}
+{#										<li class="dropdown"><a href="#">Events</a>#}
+{#											<ul>#}
+{#												<li><a href="events.html">Events</a></li>#}
+{#												<li><a href="events-detail.html">Events Detail</a></li>#}
+{#											</ul>#}
+{#										</li>#}
+{#										<li class="dropdown has-mega-menu"><a href="#">Projects</a>#}
+{#											<div class="mega-menu">#}
+{#												<div class="mega-menu-bar row clearfix">#}
+{#													<div class="column col-md-4 col-xs-12">#}
+{#														<h1>#}
+{#															<figure>#}
+{#																<img src="{% static 'images/logo-12.png' %}" alt="" />#}
+{#															</figure>#}
+{#														</h1>#}
+{##}
+{#														#}
+{#														<h3>Project 1</h3>#}
+{#														<ul>#}
+{#															<li><a href="faq.html">Subproject 1</a></li>#}
+{#															<li><a href="team.html">Subproject 1</a></li>#}
+{#															<li><a href="donation.html">Subproject 1</a></li>#}
+{#															<li><a href="comming-soon.html">Subproject 1</a></li>#}
+{#															<li><a href="testimonial.html">Subproject 1</a></li>#}
+{#														</ul>#}
+{#													</div>#}
+{#													<div class="column col-md-4 col-xs-12">#}
+{#														<h1>#}
+{#															<figure>#}
+{#																<img src="{% static 'images/logo-12.png' %}" alt="" />#}
+{#															</figure>#}
+{#														</h1>#}
+{##}
+{#														#}
+{#														<h3>Project 1</h3>#}
+{#														<ul>#}
+{#															<li><a href="faq.html">Subproject 1</a></li>#}
+{#															<li><a href="team.html">Subproject 1</a></li>#}
+{#															<li><a href="donation.html">Subproject 1</a></li>#}
+{#															<li><a href="comming-soon.html">Subproject 1</a></li>#}
+{#															<li><a href="testimonial.html">Subproject 1</a></li>#}
+{#														</ul>#}
+{#													</div>#}
+{#													<div class="column col-md-4 col-xs-12">#}
+{#														<h1>#}
+{#															<figure>#}
+{#																<img src="{% static 'images/logo-12.png' %}" alt="" />#}
+{#															</figure>#}
+{#														</h1>#}
+{##}
+{#														#}
+{#														<h3>Project 1</h3>#}
+{#														<ul>#}
+{#															<li><a href="faq.html">Subproject 1</a></li>#}
+{#															<li><a href="team.html">Subproject 1</a></li>#}
+{#															<li><a href="donation.html">Subproject 1</a></li>#}
+{#															<li><a href="comming-soon.html">Subproject 1</a></li>#}
+{#															<li><a href="testimonial.html">Subproject 1</a></li>#}
+{#														</ul>#}
+{#													</div>#}
+{#												</div>#}
+{#											</div>#}
+{#										</li>#}
+{#										<li class="dropdown"><a href="#">Blog</a>#}
+{#											<ul>#}
+{#												<li><a href="blog-classic.html">Blog Classic</a></li>#}
+{#												<li><a href="blog-single.html">Blog Single</a></li>#}
+{#												<li><a href="not-found.html">Not Found</a></li>#}
+{#											</ul>#}
+{#										</li>#}
+										<li><a href="{% url 'contact' %}">Contact us</a></li>
 									</ul>
 								</div>
 							</nav>
