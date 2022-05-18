@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-b6$hy5j3d^n#gq15jflht)9$&ql+!p6f*t!bt(zcmigo7&t9o-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['hashimukhbd.com']
 
 
 # Application definition
@@ -75,6 +75,17 @@ WSGI_APPLICATION = 'hashimukhDjangoProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'hashzbix_hashimukhdb',
+#         'USER': 'hashzbix_admin',
+#         'PASSWORD': 'sA11235813!',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -116,15 +127,18 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
+print(BASE_DIR)
+STATIC_URL = 'hashimukh/statics/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'hashimukh/statics')
+# STATIC_ROOT = '/home/hashzbix/hashimukh/hashimukh/statics/'
 
-STATIC_URL = 'static/'
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'statics'),
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'statics'),
+# ]
 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
