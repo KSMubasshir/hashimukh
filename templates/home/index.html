@@ -3,1289 +3,1342 @@
 
 
 <head>
-	<meta charset="utf-8">
-	<title>Hashimukh|Home </title>
-	<!-- Stylesheets -->
+    <meta charset="utf-8">
+    <title>Hashimukh|Home </title>
+    <!-- Stylesheets -->
     {% load static %}
-	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
-	<link href="{% static 'css/style.css' %}" rel="stylesheet">
-	<link href="{% static 'css/slick.css' %}" rel="stylesheet">
-	<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
-	<!--Color Switcher Mockup-->
-	<link href="{% static 'css/color-switcher-design.css' %}" rel="stylesheet">
-	<!--Color Themes-->
-	<link id="theme-color-file" href="{% static 'css/color-themes/default-theme.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/slick.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    <!--Color Switcher Mockup-->
+    <link href="{% static 'css/color-switcher-design.css' %}" rel="stylesheet">
+    <!--Color Themes-->
+    <link id="theme-color-file" href="{% static 'css/color-themes/default-theme.css' %}" rel="stylesheet">
 
-	<link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
-	<link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
 
-	<!-- Responsive -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-	<!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
 </head>
 
 <body class="hidden-bar-wrapper">
 
-	<div class="page-wrapper">
+<div class="page-wrapper">
 
-		<!-- Preloader -->
-		<div class="preloader"></div>
+    <!-- Preloader -->
+    <div class="preloader"></div>
 
-		<!-- Main Header / Header Style Two -->
-		<header class="main-header header-style-two">
+    <!-- Main Header / Header Style Two -->
+    <header class="main-header header-style-two">
 
-			<!-- Header Top Two -->
-			<div class="header-top-two">
-				<div class="auto-container">
-					<div class="row clearfix">
-						<!--Top Left-->
-						<div class="top-left col-lg-7 col-md-12 col-sm-12">
-							<ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li><h4>Spread the Smile</h4></li>
-{#								<li>73/D Central Road, Dhanmondi, Dhaka</li>#}
-{#								<li>+8801994715244</li>#}
-							</ul>
-						</div>
+        <!-- Header Top Two -->
+        <div class="header-top-two">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <!--Top Left-->
+                    <div class="top-left col-lg-7 col-md-12 col-sm-12">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li><h4>Spread the Smile</h4></li>
+                            {#								<li>73/D Central Road, Dhanmondi, Dhaka</li>#}
+                            {#								<li>+8801994715244</li>#}
+                        </ul>
+                    </div>
 
-						<!--Top Right-->
-						<div class="top-right col-lg-5 col-md-12 col-sm-12">
-							<!--Social Box-->
-							<ul class="social-box">
-								<li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-								<li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
-								<li><a href="#"><span class="fab fa-skype"></span></a></li>
-								<li><a href="#"><span class="fab fa-twitter"></span></a></li>
-								<li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-							</ul>
-						</div>
+                    <!--Top Right-->
+                    <div class="top-right col-lg-5 col-md-12 col-sm-12">
+                        <!--Social Box-->
+                        <ul class="social-box">
+                            <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                            <li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                            <li><a href="#"><span class="fab fa-skype"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                        </ul>
+                    </div>
 
-					</div>
-				</div>
-			</div>
+                </div>
+            </div>
+        </div>
 
-			<!--Header-Upper-->
-			<div class="header-upper">
-				<div class="auto-container">
-					<div class="clearfix">
+        <!--Header-Upper-->
+        <div class="header-upper">
+            <div class="auto-container">
+                <div class="clearfix">
 
-						<div class="pull-left logo-box">
-							<div class="logo"><a href="{% url 'index'  %}"><img src="{% static 'images/logo-11.resized.png' %}" alt="" title=""></a>
-							</div>
-						</div>
+                    <div class="pull-left logo-box">
+                        <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/logo-main.png' %}"
+                                                                           alt="" title="" style="height: 100px; width: 150px"></a>
+                        </div>
+                    </div>
 
-						<div class="nav-outer clearfix">
-							
-							<!-- Main Menu -->
-							<nav class="main-menu navbar-expand-md">
-								<div class="navbar-header">
-									<!-- Toggle Button -->
-									<button class="navbar-toggler" type="button" data-toggle="collapse"
-										data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-										aria-expanded="false" aria-label="Toggle navigation">
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-								</div>
+                    <div class="pull-left logo-box">
+                        <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/logo-11.png' %}"
+                                                                           alt="" title=""></a>
+                        </div>
+                    </div>
 
-								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-									<ul class="navigation clearfix">
-{#										<li class="current dropdown"><a href="#">Home</a>#}
-{#											<ul>#}
-{#												<li><a href="index-2.html">Home Page 01</a></li>#}
-{#												<li><a href="index-3.html">Home Page 02</a></li>#}
-{#												<li><a href="index-4.html">Home Page 03</a></li>#}
-{#												<li class="dropdown"><a href="#">Header Styles</a>#}
-{#													<ul>#}
-{#														<li><a href="index-2.html">Header Style 01</a></li>#}
-{#														<li><a href="index-3.html">Header Style 02</a></li>#}
-{#														<li><a href="index-4.html">Header Style 03</a></li>#}
-{#													</ul>#}
-{#												</li>#}
-{#											</ul>#}
-{#										</li>#}
-{#										<li class="dropdown"><a href="#">About</a>#}
-{#											<ul>#}
-{#												<li><a href="about.html">About Us</a></li>#}
-{#												<li><a href="faq.html">Faq</a></li>#}
-{#												<li><a href="team.html">Team</a></li>#}
-{#												<li><a href="donation.html">Donation</a></li>#}
-{#												<li><a href="comming-soon.html">Comming Soon</a></li>#}
-{#												<li><a href="testimonial.html">Testimonial</a></li>#}
-{#											</ul>#}
-{#										</li>#}
-{#										<li class="dropdown"><a href="#">Events</a>#}
-{#											<ul>#}
-{#												<li><a href="events.html">Events</a></li>#}
-{#												<li><a href="events-detail.html">Events Detail</a></li>#}
-{#											</ul>#}
-{#										</li>#}
-{#										<li class="dropdown has-mega-menu"><a href="#">Projects</a>#}
-{#											<div class="mega-menu">#}
-{#												<div class="mega-menu-bar row clearfix">#}
-{#													<div class="column col-md-4 col-xs-12">#}
-{#														<h1>#}
-{#															<figure>#}
-{#																<img src="{% static 'images/logo-12.png' %}" alt="" />#}
-{#															</figure>#}
-{#														</h1>#}
-{##}
-{#														#}
-{#														<h3>Project 1</h3>#}
-{#														<ul>#}
-{#															<li><a href="faq.html">Subproject 1</a></li>#}
-{#															<li><a href="team.html">Subproject 1</a></li>#}
-{#															<li><a href="donation.html">Subproject 1</a></li>#}
-{#															<li><a href="comming-soon.html">Subproject 1</a></li>#}
-{#															<li><a href="testimonial.html">Subproject 1</a></li>#}
-{#														</ul>#}
-{#													</div>#}
-{#													<div class="column col-md-4 col-xs-12">#}
-{#														<h1>#}
-{#															<figure>#}
-{#																<img src="{% static 'images/logo-12.png' %}" alt="" />#}
-{#															</figure>#}
-{#														</h1>#}
-{##}
-{#														#}
-{#														<h3>Project 1</h3>#}
-{#														<ul>#}
-{#															<li><a href="faq.html">Subproject 1</a></li>#}
-{#															<li><a href="team.html">Subproject 1</a></li>#}
-{#															<li><a href="donation.html">Subproject 1</a></li>#}
-{#															<li><a href="comming-soon.html">Subproject 1</a></li>#}
-{#															<li><a href="testimonial.html">Subproject 1</a></li>#}
-{#														</ul>#}
-{#													</div>#}
-{#													<div class="column col-md-4 col-xs-12">#}
-{#														<h1>#}
-{#															<figure>#}
-{#																<img src="{% static 'images/logo-12.png' %}" alt="" />#}
-{#															</figure>#}
-{#														</h1>#}
-{##}
-{#														#}
-{#														<h3>Project 1</h3>#}
-{#														<ul>#}
-{#															<li><a href="faq.html">Subproject 1</a></li>#}
-{#															<li><a href="team.html">Subproject 1</a></li>#}
-{#															<li><a href="donation.html">Subproject 1</a></li>#}
-{#															<li><a href="comming-soon.html">Subproject 1</a></li>#}
-{#															<li><a href="testimonial.html">Subproject 1</a></li>#}
-{#														</ul>#}
-{#													</div>#}
-{#												</div>#}
-{#											</div>#}
-{#										</li>#}
-{#										<li class="dropdown"><a href="#">Blog</a>#}
-{#											<ul>#}
-{#												<li><a href="blog-classic.html">Blog Classic</a></li>#}
-{#												<li><a href="blog-single.html">Blog Single</a></li>#}
-{#												<li><a href="not-found.html">Not Found</a></li>#}
-{#											</ul>#}
-{#										</li>#}
-                                        <li><a href="donation.html" class="theme-btn donate-btn">Donate Now</a></li>
-										<li><a href="{% url 'contact' %}">Contact us</a></li>
-									</ul>
-								</div>
-							</nav>
+                    <div class="nav-outer clearfix">
 
-							<!-- Main Menu End-->
-							<div class="outer-box clearfix">
-								<div class="btn-box">
-									<!--Search Btn-->
-									<div href="#modal-popup-2" class="navsearch-button xs-modal-popup"><i
-											class="icon flaticon-magnifying-glass-1"></i></div>
+                        <!-- Main Menu -->
+                        <nav class="main-menu navbar-expand-md">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
 
-									<!-- Main Menu End-->
-									
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-			<!--End Header Upper-->
-
-			<!--Sticky Header-->
-			<div class="sticky-header">
-				<div class="auto-container clearfix">
-					<!--Logo-->
-					<div class="logo pull-left">
-						<a href="index-2.html" class="img-responsive"><img src="{% static 'images/logo-12.png' %}" alt=""
-								title=""></a>
-					</div>
-
-					<!--Right Col-->
-					<div class="right-col pull-right">
-						<!-- Main Menu -->
-						<nav class="main-menu navbar-expand-md">
-							<button class="navbar-toggler" type="button" data-toggle="collapse"
-								data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
-								aria-expanded="false" aria-label="Toggle navigation">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-
-							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
-								<ul class="navigation clearfix">
-{#									<li class="current dropdown"><a href="#">Home</a>#}
-{#										<ul>#}
-{#											<li><a href="index-2.html">Home Page 01</a></li>#}
-{#											<li><a href="index-3.html">Home Page 02</a></li>#}
-{#											<li><a href="index-4.html">Home Page 03</a></li>#}
-{#											<li class="dropdown"><a href="#">Header Styles</a>#}
-{#												<ul>#}
-{#													<li><a href="index-2.html">Header Style 01</a></li>#}
-{#													<li><a href="index-3.html">Header Style 02</a></li>#}
-{#													<li><a href="index-4.html">Header Style 03</a></li>#}
-{#												</ul>#}
-{#											</li>#}
-{#										</ul>#}
-{#									</li>#}
-{#									<li class="dropdown"><a href="#">About</a>#}
-{#										<ul>#}
-{#											<li><a href="about.html">About Us</a></li>#}
-{#											<li><a href="faq.html">Faq</a></li>#}
-{#											<li><a href="team.html">Team</a></li>#}
-{#											<li><a href="donation.html">Donation</a></li>#}
-{#											<li><a href="comming-soon.html">Comming Soon</a></li>#}
-{#											<li><a href="testimonial.html">Testimonial</a></li>#}
-{#										</ul>#}
-{#									</li>#}
-{#									<li class="dropdown"><a href="#">Events</a>#}
-{#										<ul>#}
-{#											<li><a href="events.html">Events</a></li>#}
-{#											<li><a href="events-detail.html">Events Detail</a></li>#}
-{#										</ul>#}
-{#									</li>#}
-{#									<li class="dropdown has-mega-menu"><a href="#">Projects</a>#}
-{#										<div class="mega-menu">#}
-{#											<div class="mega-menu-bar row clearfix">#}
-{#												<div class="column col-md-4 col-xs-12">#}
-{#													<h1>#}
-{#														<figure>#}
-{#															<img src="{% static 'images/logo-12.png' %}" alt="" />#}
-{#														</figure>#}
-{#													</h1>#}
-{##}
-{#													#}
-{#													<h3>Project 1</h3>#}
-{#													<ul>#}
-{#														<li><a href="faq.html">Subproject 1</a></li>#}
-{#														<li><a href="team.html">Subproject 1</a></li>#}
-{#														<li><a href="donation.html">Subproject 1</a></li>#}
-{#														<li><a href="comming-soon.html">Subproject 1</a></li>#}
-{#														<li><a href="testimonial.html">Subproject 1</a></li>#}
-{#													</ul>#}
-{#												</div>#}
-{#												<div class="column col-md-4 col-xs-12">#}
-{#													<h1>#}
-{#														<figure>#}
-{#															<img src="{% static 'images/logo-12.png' %}" alt="" />#}
-{#														</figure>#}
-{#													</h1>#}
-{##}
-{#													#}
-{#													<h3>Project 1</h3>#}
-{#													<ul>#}
-{#														<li><a href="faq.html">Subproject 1</a></li>#}
-{#														<li><a href="team.html">Subproject 1</a></li>#}
-{#														<li><a href="donation.html">Subproject 1</a></li>#}
-{#														<li><a href="comming-soon.html">Subproject 1</a></li>#}
-{#														<li><a href="testimonial.html">Subproject 1</a></li>#}
-{#													</ul>#}
-{#												</div>#}
-{#												<div class="column col-md-4 col-xs-12">#}
-{#													<h1>#}
-{#														<figure>#}
-{#															<img src="{% static 'images/logo-12.png' %}" alt="" />#}
-{#														</figure>#}
-{#													</h1>#}
-{##}
-{#													#}
-{#													<h3>Project 1</h3>#}
-{#													<ul>#}
-{#														<li><a href="faq.html">Subproject 1</a></li>#}
-{#														<li><a href="team.html">Subproject 1</a></li>#}
-{#														<li><a href="donation.html">Subproject 1</a></li>#}
-{#														<li><a href="comming-soon.html">Subproject 1</a></li>#}
-{#														<li><a href="testimonial.html">Subproject 1</a></li>#}
-{#													</ul>#}
-{#												</div>#}
-{#											</div>#}
-{#										</div>#}
-{#									</li><li class="dropdown"><a href="#">Blog</a>#}
-{#										<ul>#}
-{#											<li><a href="blog-classic.html">Blog Classic</a></li>#}
-{#											<li><a href="blog-single.html">Blog Single</a></li>#}
-{#											<li><a href="not-found.html">Not Found</a></li>#}
-{#										</ul>#}
-{#									</li>#}
+                            <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    {#										<li class="current dropdown"><a href="#">Home</a>#}
+                                    {#											<ul>#}
+                                    {#												<li><a href="index-2.html">Home Page 01</a></li>#}
+                                    {#												<li><a href="index-3.html">Home Page 02</a></li>#}
+                                    {#												<li><a href="index-4.html">Home Page 03</a></li>#}
+                                    {#												<li class="dropdown"><a href="#">Header Styles</a>#}
+                                    {#													<ul>#}
+                                    {#														<li><a href="index-2.html">Header Style 01</a></li>#}
+                                    {#														<li><a href="index-3.html">Header Style 02</a></li>#}
+                                    {#														<li><a href="index-4.html">Header Style 03</a></li>#}
+                                    {#													</ul>#}
+                                    {#												</li>#}
+                                    {#											</ul>#}
+                                    {#										</li>#}
+                                    {#										<li class="dropdown"><a href="#">About</a>#}
+                                    {#											<ul>#}
+                                    {#												<li><a href="about.html">About Us</a></li>#}
+                                    {#												<li><a href="faq.html">Faq</a></li>#}
+                                    {#												<li><a href="team.html">Team</a></li>#}
+                                    {#												<li><a href="donation.html">Donation</a></li>#}
+                                    {#												<li><a href="comming-soon.html">Comming Soon</a></li>#}
+                                    {#												<li><a href="testimonial.html">Testimonial</a></li>#}
+                                    {#											</ul>#}
+                                    {#										</li>#}
+                                    {#										<li class="dropdown"><a href="#">Events</a>#}
+                                    {#											<ul>#}
+                                    {#												<li><a href="events.html">Events</a></li>#}
+                                    {#												<li><a href="events-detail.html">Events Detail</a></li>#}
+                                    {#											</ul>#}
+                                    {#										</li>#}
+                                    {#										<li class="dropdown has-mega-menu"><a href="#">Projects</a>#}
+                                    {#											<div class="mega-menu">#}
+                                    {#												<div class="mega-menu-bar row clearfix">#}
+                                    {#													<div class="column col-md-4 col-xs-12">#}
+                                    {#														<h1>#}
+                                    {#															<figure>#}
+                                    {#																<img src="{% static 'images/logo-12.png' %}" alt="" />#}
+                                    {#															</figure>#}
+                                    {#														</h1>#}
+                                    {##}
+                                    {#														#}
+                                    {#														<h3>Project 1</h3>#}
+                                    {#														<ul>#}
+                                    {#															<li><a href="faq.html">Subproject 1</a></li>#}
+                                    {#															<li><a href="team.html">Subproject 1</a></li>#}
+                                    {#															<li><a href="donation.html">Subproject 1</a></li>#}
+                                    {#															<li><a href="comming-soon.html">Subproject 1</a></li>#}
+                                    {#															<li><a href="testimonial.html">Subproject 1</a></li>#}
+                                    {#														</ul>#}
+                                    {#													</div>#}
+                                    {#													<div class="column col-md-4 col-xs-12">#}
+                                    {#														<h1>#}
+                                    {#															<figure>#}
+                                    {#																<img src="{% static 'images/logo-12.png' %}" alt="" />#}
+                                    {#															</figure>#}
+                                    {#														</h1>#}
+                                    {##}
+                                    {#														#}
+                                    {#														<h3>Project 1</h3>#}
+                                    {#														<ul>#}
+                                    {#															<li><a href="faq.html">Subproject 1</a></li>#}
+                                    {#															<li><a href="team.html">Subproject 1</a></li>#}
+                                    {#															<li><a href="donation.html">Subproject 1</a></li>#}
+                                    {#															<li><a href="comming-soon.html">Subproject 1</a></li>#}
+                                    {#															<li><a href="testimonial.html">Subproject 1</a></li>#}
+                                    {#														</ul>#}
+                                    {#													</div>#}
+                                    {#													<div class="column col-md-4 col-xs-12">#}
+                                    {#														<h1>#}
+                                    {#															<figure>#}
+                                    {#																<img src="{% static 'images/logo-12.png' %}" alt="" />#}
+                                    {#															</figure>#}
+                                    {#														</h1>#}
+                                    {##}
+                                    {#														#}
+                                    {#														<h3>Project 1</h3>#}
+                                    {#														<ul>#}
+                                    {#															<li><a href="faq.html">Subproject 1</a></li>#}
+                                    {#															<li><a href="team.html">Subproject 1</a></li>#}
+                                    {#															<li><a href="donation.html">Subproject 1</a></li>#}
+                                    {#															<li><a href="comming-soon.html">Subproject 1</a></li>#}
+                                    {#															<li><a href="testimonial.html">Subproject 1</a></li>#}
+                                    {#														</ul>#}
+                                    {#													</div>#}
+                                    {#												</div>#}
+                                    {#											</div>#}
+                                    {#										</li>#}
+                                    {#										<li class="dropdown"><a href="#">Blog</a>#}
+                                    {#											<ul>#}
+                                    {#												<li><a href="blog-classic.html">Blog Classic</a></li>#}
+                                    {#												<li><a href="blog-single.html">Blog Single</a></li>#}
+                                    {#												<li><a href="not-found.html">Not Found</a></li>#}
+                                    {#											</ul>#}
+                                    {#										</li>#}
                                     <li><a href="donation.html" class="theme-btn donate-btn">Donate Now</a></li>
-									<li><a href="contact.html">Contact us</a></li>
-								</ul>
-							</div>
-						</nav><!-- Main Menu End-->
-					</div>
+                                    <li><a href="{% url 'contact' %}">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </nav>
 
-				</div>
-			</div>
-			<!--End Sticky Header-->
+                        <!-- Main Menu End-->
+                        <div class="outer-box clearfix">
+                            <div class="btn-box">
+                                <!--Search Btn-->
+                                <div href="#modal-popup-2" class="navsearch-button xs-modal-popup"><i
+                                        class="icon flaticon-magnifying-glass-1"></i></div>
 
-		</header>
+                                <!-- Main Menu End-->
 
-		<!--End Main Header -->
+                            </div>
+                        </div>
 
-		<!--Main Slider-->
-		<section class="main-slider-two">
+                    </div>
 
-			<div class="main-slider-carousel owl-carousel owl-theme">
+                </div>
 
-				<div class="slide"
-					style="background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url({% static 'images/main-slider/image-6.jpg' %})">
-					<div class="auto-container">
-						<div class="content text-center">
-							<div class="title">Eduction Charity</div>
-							<h2>Help Underprivileged Children Have <br> A Better Learning Enviroment</h2>
+            </div>
+        </div>
+        <!--End Header Upper-->
 
-							<div class="link-box">
-								<div class="text-center clearfix">
-									<a href="donate.html" class="theme-btn btn-style-five">Donate Now</a>
-									<a href="about.html" class="theme-btn btn-style-six"><span class="txt">learn
+        <!--Sticky Header-->
+        <div class="sticky-header">
+            <div class="auto-container clearfix">
+                <!--Logo-->
+                <div class="pull-left logo-box">
+                    <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/logo-main.png' %}" alt=""
+                                                                       title="" style="height: 100px; width: 150px"></a>
+                    </div>
+                </div>
+                <div class="logo pull-left">
+                    <a href="index-2.html" class="img-responsive"><img src="{% static 'images/logo-12.png' %}" alt=""
+                                                                       title=""></a>
+                </div>
+
+                <!--Right Col-->
+                <div class="right-col pull-right">
+                    <!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-md">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
+                            <ul class="navigation clearfix">
+                                {#									<li class="current dropdown"><a href="#">Home</a>#}
+                                {#										<ul>#}
+                                {#											<li><a href="index-2.html">Home Page 01</a></li>#}
+                                {#											<li><a href="index-3.html">Home Page 02</a></li>#}
+                                {#											<li><a href="index-4.html">Home Page 03</a></li>#}
+                                {#											<li class="dropdown"><a href="#">Header Styles</a>#}
+                                {#												<ul>#}
+                                {#													<li><a href="index-2.html">Header Style 01</a></li>#}
+                                {#													<li><a href="index-3.html">Header Style 02</a></li>#}
+                                {#													<li><a href="index-4.html">Header Style 03</a></li>#}
+                                {#												</ul>#}
+                                {#											</li>#}
+                                {#										</ul>#}
+                                {#									</li>#}
+                                {#									<li class="dropdown"><a href="#">About</a>#}
+                                {#										<ul>#}
+                                {#											<li><a href="about.html">About Us</a></li>#}
+                                {#											<li><a href="faq.html">Faq</a></li>#}
+                                {#											<li><a href="team.html">Team</a></li>#}
+                                {#											<li><a href="donation.html">Donation</a></li>#}
+                                {#											<li><a href="comming-soon.html">Comming Soon</a></li>#}
+                                {#											<li><a href="testimonial.html">Testimonial</a></li>#}
+                                {#										</ul>#}
+                                {#									</li>#}
+                                {#									<li class="dropdown"><a href="#">Events</a>#}
+                                {#										<ul>#}
+                                {#											<li><a href="events.html">Events</a></li>#}
+                                {#											<li><a href="events-detail.html">Events Detail</a></li>#}
+                                {#										</ul>#}
+                                {#									</li>#}
+                                {#									<li class="dropdown has-mega-menu"><a href="#">Projects</a>#}
+                                {#										<div class="mega-menu">#}
+                                {#											<div class="mega-menu-bar row clearfix">#}
+                                {#												<div class="column col-md-4 col-xs-12">#}
+                                {#													<h1>#}
+                                {#														<figure>#}
+                                {#															<img src="{% static 'images/logo-12.png' %}" alt="" />#}
+                                {#														</figure>#}
+                                {#													</h1>#}
+                                {##}
+                                {#													#}
+                                {#													<h3>Project 1</h3>#}
+                                {#													<ul>#}
+                                {#														<li><a href="faq.html">Subproject 1</a></li>#}
+                                {#														<li><a href="team.html">Subproject 1</a></li>#}
+                                {#														<li><a href="donation.html">Subproject 1</a></li>#}
+                                {#														<li><a href="comming-soon.html">Subproject 1</a></li>#}
+                                {#														<li><a href="testimonial.html">Subproject 1</a></li>#}
+                                {#													</ul>#}
+                                {#												</div>#}
+                                {#												<div class="column col-md-4 col-xs-12">#}
+                                {#													<h1>#}
+                                {#														<figure>#}
+                                {#															<img src="{% static 'images/logo-12.png' %}" alt="" />#}
+                                {#														</figure>#}
+                                {#													</h1>#}
+                                {##}
+                                {#													#}
+                                {#													<h3>Project 1</h3>#}
+                                {#													<ul>#}
+                                {#														<li><a href="faq.html">Subproject 1</a></li>#}
+                                {#														<li><a href="team.html">Subproject 1</a></li>#}
+                                {#														<li><a href="donation.html">Subproject 1</a></li>#}
+                                {#														<li><a href="comming-soon.html">Subproject 1</a></li>#}
+                                {#														<li><a href="testimonial.html">Subproject 1</a></li>#}
+                                {#													</ul>#}
+                                {#												</div>#}
+                                {#												<div class="column col-md-4 col-xs-12">#}
+                                {#													<h1>#}
+                                {#														<figure>#}
+                                {#															<img src="{% static 'images/logo-12.png' %}" alt="" />#}
+                                {#														</figure>#}
+                                {#													</h1>#}
+                                {##}
+                                {#													#}
+                                {#													<h3>Project 1</h3>#}
+                                {#													<ul>#}
+                                {#														<li><a href="faq.html">Subproject 1</a></li>#}
+                                {#														<li><a href="team.html">Subproject 1</a></li>#}
+                                {#														<li><a href="donation.html">Subproject 1</a></li>#}
+                                {#														<li><a href="comming-soon.html">Subproject 1</a></li>#}
+                                {#														<li><a href="testimonial.html">Subproject 1</a></li>#}
+                                {#													</ul>#}
+                                {#												</div>#}
+                                {#											</div>#}
+                                {#										</div>#}
+                                {#									</li><li class="dropdown"><a href="#">Blog</a>#}
+                                {#										<ul>#}
+                                {#											<li><a href="blog-classic.html">Blog Classic</a></li>#}
+                                {#											<li><a href="blog-single.html">Blog Single</a></li>#}
+                                {#											<li><a href="not-found.html">Not Found</a></li>#}
+                                {#										</ul>#}
+                                {#									</li>#}
+                                <li><a href="donation.html" class="theme-btn donate-btn">Donate Now</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+                </div>
+
+            </div>
+        </div>
+        <!--End Sticky Header-->
+
+    </header>
+
+    <!--End Main Header -->
+
+    <!--Main Slider-->
+    <section class="main-slider-two">
+
+        <div class="main-slider-carousel owl-carousel owl-theme">
+
+            <div class="slide"
+                 style="background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url({% static 'images/main-slider/image-6.jpg' %})">
+                <div class="auto-container">
+                    <div class="content text-center">
+                        <div class="title">Eduction Charity</div>
+                        <h2>Help Underprivileged Children Have <br> A Better Learning Enviroment</h2>
+
+                        <div class="link-box">
+                            <div class="text-center clearfix">
+                                <a href="donate.html" class="theme-btn btn-style-five">Donate Now</a>
+                                <a href="about.html" class="theme-btn btn-style-six"><span class="txt">learn
 											more</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-				<div class="slide"
-					style="background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url({% static 'images/main-slider/image-5.jpg' %})">
-					<div class="auto-container">
-						<div class="content clearfix">
-							<div class="title">Health Charity</div>
-							<h2>Help Underprivileged Children Have <br> A Better Health</h2>
+            <div class="slide"
+                 style="background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url({% static 'images/main-slider/image-5.jpg' %})">
+                <div class="auto-container">
+                    <div class="content clearfix">
+                        <div class="title">Health Charity</div>
+                        <h2>Help Underprivileged Children Have <br> A Better Health</h2>
 
-							<div class="link-box">
-								<div class="text-center clearfix">
-									<a href="donate.html" class="theme-btn btn-style-five">Donate Now</a>
-									<a href="about.html" class="theme-btn btn-style-six"><span class="txt">learn
+                        <div class="link-box">
+                            <div class="text-center clearfix">
+                                <a href="donate.html" class="theme-btn btn-style-five">Donate Now</a>
+                                <a href="about.html" class="theme-btn btn-style-six"><span class="txt">learn
 											more</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-				<div class="slide"
-					style="background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url({% static 'images/main-slider/image-4.jpg' %})">
-					<div class="auto-container">
-						<div class="content clearfix">
-							<div class="title">Women Empowerment</div>
-							<h2>Ensure Empowerment <br> Of Women</h2>
+            <div class="slide"
+                 style="background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url({% static 'images/main-slider/image-4.jpg' %})">
+                <div class="auto-container">
+                    <div class="content clearfix">
+                        <div class="title">Women Empowerment</div>
+                        <h2>Ensure Empowerment <br> Of Women</h2>
 
-							<div class="link-box">
-								<div class="text-center clearfix">
-									<a href="donate.html" class="theme-btn btn-style-five">Donate Now</a>
-									<a href="about.html" class="theme-btn btn-style-six"><span class="txt">learn
+                        <div class="link-box">
+                            <div class="text-center clearfix">
+                                <a href="donate.html" class="theme-btn btn-style-five">Donate Now</a>
+                                <a href="about.html" class="theme-btn btn-style-six"><span class="txt">learn
 											more</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-			<!--Scroll Dwwn Btn-->
-			<div class="mouse-btn-down scroll-to-target" data-target=".welcome-section"></div>
-		</section>
-		<!--End Main Slider-->
-
-		<section class="welcome-section">
-			<div class="auto-container">
-				<div class="row clearfix">
-
-					<!-- Content Column -->
-					<div class="content-column col-lg-6 col-md-12 col-sm-12">
-						<div class="inner-column">
-                            <h1>Welcome To <span class="theme_color"><b>Hashimukh</b></span></h1>
-
-							<div class="text" align="center">
-								<p align="justify">
-								<b>Hashimukh Shomaj Kallayan Shongstha</b> is a non-profit social welfare organization working solely for the betterment of underprivileged children towards a quality life. It is supported constantly by its advisory board and executive committee with guidelines, finances, encouragements, and ideas which drive the organization to better performance each day.
-								</p>
-							</div>
-							<a align="center" href="about.html" class="theme-btn btn-style-three">Join Us Now</a>
-						</div>
-					</div>
-
-					<!-- Video Column -->
-					<div class="video-column col-lg-6 col-md-12 col-sm-12">
-						<div class="inner-column">
-
-							<!--Video Box-->
-							<div class="video-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-								<figure class="video-image">
-									<img src="{% static 'images/resource/video-img.jpg' %}" alt="">
-								</figure>
-								<a href="{% static 'videos/hasimukhproject.mp4' %}" class="lightbox-image overlay-box"><span
-										class="flaticon-play-button"><i class="ripple"></i></span></a>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-
-		<!-- Services Section -->
-		<section class="services-section-two">
-			<div class="auto-container">
-				<!-- Sec Title -->
-				<div class="sec-title centered">
-					<h2><span class="theme_color">Mission & </span> Vision</h2>
-					<div class="text"><span class="theme_color">><b>Mission: </b></span> Equal participation of population to the betterment of society irrespective of class, gender, race, ethnicity, wealth, and power.<br><span class="theme_color">><b>Vision: </b></span>Equal rights for all.</div>
-				</div>
-				<div class="row clearfix">
-
-					<!-- Service Block Two -->
-					<div class="service-block-two col-lg-6 col-md-12 col-sm-12">
-						<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-							<div class="icon-box">
-								<span class="icon flaticon-money-bag"></span>
-							</div>
-							<h3><a href="causes-single.html">Equality</a></h3>
-							<div class="text">Default text for Box Content.</div>
-						</div>
-					</div>
-
-					<!-- Service Block Two -->
-					<div class="service-block-two col-lg-6 col-md-12 col-sm-12">
-						<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-							<div class="icon-box">
-								<span class="icon flaticon-donation-2"></span>
-							</div>
-							<h3><a href="web/index.html">Altruism</a></h3>
-							<div class="text">Default text for Box Content.</div>
-						</div>
-					</div>
-
-					<!-- Service Block Two -->
-					<div class="service-block-two col-lg-6 col-md-12 col-sm-12">
-						<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-							<div class="icon-box">
-								<span class="icon flaticon-house-1"></span>
-							</div>
-							<h3><a href="causes-single.html">Sharing knowledge and skills</a></h3>
-							<div class="text">Default text for Box Content.</div>
-						</div>
-					</div>
-
-					<!-- Service Block Two -->
-					<div class="service-block-two col-lg-6 col-md-12 col-sm-12">
-						<div class="inner-box wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
-							<div class="icon-box">
-								<span class="icon flaticon-world"></span>
-							</div>
-							<h3><a href="causes-single.html">Empowering the discriminated</a></h3>
-							<div class="text">Default text for Box Content</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>	
-		<!-- Gallery Section -->
-		<section class="gallery-section">
-			<div class="auto-container">
-				<!-- Sec Title -->
-				<div class="sec-title centered">
-					<h2><span class="theme_color">Our</span> Projects</h2>
-					<div class="text">We have successfully for Underprivileged Peoples <br> completed 500+ projects</div>
-				</div>
-				
-				<!--MixitUp Galery-->
-				<div class="mixitup-gallery">
-					
-					<!--Filter-->
-					<div class="filters clearfix">
-						
-						<ul class="filter-tabs filter-btns text-center clearfix">
-							<li class="active filter" data-role="button" data-filter="all">All</li>
-							<li class="filter" data-role="button" data-filter=".homeless">HOMELESS</li>
-							<li class="filter" data-role="button" data-filter=".charity">CHARITY</li>
-							<li class="filter" data-role="button" data-filter=".food">FOOD HELP</li>
-							<li class="filter" data-role="button" data-filter=".water">CLEAN WATER</li>
-						</ul>
-						
-					</div>
-					
-					<div class="filter-list row clearfix">
-						
-						<!-- Gallery Block -->
-						<div class="gallery-block mix water charity col-lg-4 col-md-6 col-sm-12">
-							<div class="inner-box">
-								<div class="image">
-									<figure>
-										<img src="{% static 'images/gallery/1.jpg' %}" alt="" />
-										<figcaption>Education Plus Project</figcaption>
-									</figure>
-									
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<h3><a href="#">Education Plus Project</a></h3>
-											<div class="text">Target the community impoverished children who need to be lifted from the depths and brought into the light.</div>
-											<ul class="links">
-												<li><a href="project1.html" class="icon flaticon-web-link"></a></li>
-												<li><a href="{% static 'images/gallery/1.jpg' %}" data-fancybox="gallery" data-caption="" class="icon flaticon-full-screen"></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Gallery Block -->
-						<div class="gallery-block mix food charity col-lg-4 col-md-6 col-sm-12">
-							<div class="inner-box">
-								<div class="image">
-
-									<figure>
-										<img src="{% static 'images/gallery/2.jpg' %}" alt="" />
-										<figcaption>Moral Development</figcaption>
-									</figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<h3><a href="#">Moral Development</a></h3>
-											<div class="text">Lorem ipsum dolor sit amet, vix an natum labuti eleifd, mel am laoreetmenandri. Ei justo complectitur duo. Ei solet tos soletu possit quo. Sea cu justo laudem.</div>
-											<ul class="links">
-												<li><a href="project2.html" class="icon flaticon-web-link"></a></li>
-												<li><a href="{% static 'images/gallery/2.jpg' %}" data-fancybox="gallery" data-caption="" class="icon flaticon-full-screen"></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Gallery Block -->
-						<div class="gallery-block mix water homeless col-lg-4 col-md-6 col-sm-12">
-							<div class="inner-box">
-								<div class="image">
-									<figure>
-										<img src="{% static 'images/gallery/3.jpg' %}" alt="" />
-										<figcaption>Basic Education</figcaption>
-									</figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<h3><a href="#">Basic Education</a></h3>
-											<div class="text">Lorem ipsum dolor sit amet, vix an natum labuti eleifd, mel am laoreetmenandri. Ei justo complectitur duo. Ei solet tos soletu possit quo. Sea cu justo laudem.</div>
-											<ul class="links">
-												<li><a href="project3.html" class="icon flaticon-web-link"></a></li>
-												<li><a href="{% static 'images/gallery/3.jpg' %}" data-fancybox="gallery" data-caption="" class="icon flaticon-full-screen"></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Gallery Block -->
-						<div class="gallery-block mix food charity col-lg-4 col-md-6 col-sm-12">
-							<div class="inner-box">
-								<div class="image">
-									<figure>
-										<img src="{% static 'images/gallery/4.jpg' %}" alt="" />
-										<figcaption>IT Training</figcaption>
-									</figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<h3><a href="#">IT Training</a></h3>
-											<div class="text">Lorem ipsum dolor sit amet, vix an natum labuti eleifd, mel am laoreetmenandri. Ei justo complectitur duo. Ei solet tos soletu possit quo. Sea cu justo laudem.</div>
-											<ul class="links">
-												<li><a href="project4.html" class="icon flaticon-web-link"></a></li>
-												<li><a href="{% static 'images/gallery/4.jpg' %}" data-fancybox="gallery" data-caption="" class="icon flaticon-full-screen"></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Gallery Block -->
-						<div class="gallery-block mix food col-lg-4 col-md-6 col-sm-12">
-							<div class="inner-box">
-								<div class="image">
-									<figure>
-										<img src="{% static 'images/gallery/5.jpg' %}" alt="" />
-										<figcaption>Women Empowerment</figcaption>
-									</figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<h3><a href="#">Women Empowerment</a></h3>
-											<div class="text">Lorem ipsum dolor sit amet, vix an natum labuti eleifd, mel am laoreetmenandri. Ei justo complectitur duo. Ei solet tos soletu possit quo. Sea cu justo laudem.</div>
-											<ul class="links">
-												<li><a href="project5.html" class="icon flaticon-web-link"></a></li>
-												<li><a href="{% static 'images/gallery/5.jpg' %}" data-fancybox="gallery" data-caption="" class="icon flaticon-full-screen"></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Gallery Block -->
-						<div class="gallery-block mix homeless col-lg-4 col-md-6 col-sm-12">
-							<div class="inner-box">
-								<div class="image">
-									<figure>
-										<img src="{% static 'images/gallery/6.jpg' %}" alt="" />
-										<figcaption>Leadership Training</figcaption>
-									</figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<h3><a href="#">Leadership Training</a></h3>
-											<div class="text">Lorem ipsum dolor sit amet, vix an natum labuti eleifd, mel am laoreetmenandri. Ei justo complectitur duo. Ei solet tos soletu possit quo. Sea cu justo laudem.</div>
-											<ul class="links">
-												<li><a href="project6.html" class="icon flaticon-web-link"></a></li>
-												<li><a href="{%  static 'images/gallery/6.jpg' %}" data-fancybox="gallery" data-caption="" class="icon flaticon-full-screen"></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				
-				<div class="load-more-btn text-center">
-					<a href="#" class="theme-btn btn-style-five">load more</a>
-				</div>
-				
-			</div>
-		</section>
-		<!-- End Gallery Section -->
-
-
-		<!-- News Section -->
-		<section class="news-section-two" style="background-image: url({% static 'images/background/7.jpg' %})">
-			<div class="auto-container">
-				<!-- Sec Title -->
-				<div class="sec-title light">
-					<h2><span class="theme_color">Our Latest </span> News</h2>
-				</div>
-				<div class="news-carousel owl-carousel owl-theme">
-
-					<!-- News Block Three -->
-					<div class="news-block-three">
-						<div class="inner-box">
-							<div class="image">
-								<a href="news_feb_12.html"><img src="{%  static 'images/resource/news-12.jpg' %}" alt="" /></a>
-								<div class="read-more"><a href="news_feb_12.html" class="more">Read More</a></div>
-							</div>
-							<div class="lower-content">
-								<div class="content">
-									<div class="date-outer">
-										<div class="date">12</div>
-										<div class="month">Feb</div>
-									</div>
-									<h3><a href="news_feb_12.html">200 blankets distributed among the children.</a></h3>
-									<ul class="post-meta">
-										<li><a href="news_feb_12.html"><span
-													class="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span>Comments
-												10</a></li>
-										<li><a href="news_feb_12.html"><span
-													class="icon far fa-folder-open"></span>Charity</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- News Block Three -->
-					<div class="news-block-three">
-						<div class="inner-box">
-							<div class="image">
-								<a href="news_may_31.html"><img src="{% static 'images/resource/news-11.jpg' %}" alt="" /></a>
-								<div class="read-more"><a href="news_may_31.html" class="more">Read More</a></div>
-							</div>
-							<div class="lower-content">
-								<div class="content">
-									<div class="date-outer">
-										<div class="date">31</div>
-										<div class="month">May</div>
-									</div>
-									<h3><a href="news_may_31.html">Brilliant result in SSC 2020 celebrated</a></h3>
-									<ul class="post-meta">
-										<li><a href="news_may_31.html"><span
-													class="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span>Comments
-												10</a></li>
-										<li><a href="news_may_31.html"><span
-													class="icon far fa-folder-open"></span>Education</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- News Block Three -->
-					<div class="news-block-three">
-						<div class="inner-box">
-							<div class="image">
-								<a href="news_feb_29.html"><img src="{% static 'images/resource/news-13.jpg' %}" alt="" /></a>
-								<div class="read-more"><a href="news_feb_29.html" class="more">Read More</a></div>
-							</div>
-							<div class="lower-content">
-								<div class="content">
-									<div class="date-outer">
-										<div class="date">29</div>
-										<div class="month">Feb</div>
-									</div>
-									<h3><a href="news_feb_29.html">Art competition for the celebration of Bangabandhu's
-											birth year</a></h3>
-									<ul class="post-meta">
-										<li><a href="news_feb_29.html"><span
-													class="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span>Comments
-												5</a></li>
-										<li><a href="news_feb_29.html"><span
-													class="icon far fa-folder-open"></span>Festival</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-		<!-- End News Section -->
-
-
-
-		<!-- Call To Action Section Three -->
-		<section class="call-to-action-section-three" style="background-image: url({% static 'images/background/6.jpg' %})">
-			<div class="auto-container">
-				<div class="title">Want to join with us</div>
-				<h2>BECOME A PROUD VOLUNTEER</h2>
-				<div class="text">When you bring together those who have, with those who have not - miracles happen.
-					<br> Become a time hero by volunteering with us. Meet new friends, gain new skills, get <br>
-					happiness and have fun!</div>
-				<a href="web/index.html" class="theme-btn btn-style-five">Join With Us</a>
-			</div>
-		</section>
-		<!-- Call To Action Section Three -->
-
-		<!-- Team Section -->
-		<section class="team-section">
-			<div class="auto-container">
-				<!-- Sec Title -->
-				<div class="sec-title centered">
-					<h2><span class="theme_color">What Our Donors</span> Say</h2>
-					<div class="text">We have successfully for Underprivileged Peoples <br> completed 500+ projects</div>
-				</div>
-
-				<div class="team-carousel owl-carousel owl-theme">
-
-					<!-- Team Block -->
-					<div class="team-block">
-						<div class="inner-box">
-							<div class="clearfix">
-								<!-- Image Column -->
-								<div class="image-column col-lg-5 col-md-6 col-sm-12">
-									<div class="inner-column">
-										<div class="image">
-											<a href="team.html"><img src="{% static 'images/resource/team-3.png' %}" alt="" /></a>
-										</div>
-									</div>
-								</div>
-								<!-- Content Column -->
-								<div class="content-column col-lg-5 col-md-6 col-sm-12">
-									<div class="inner-column">
-										<h3><a href="team.html">Mohammad Awal</a></h3>
-										<div class="location">Owner/MD of SEL</div>
-										<div class="text"></div>
-										<div class="quote-icon flaticon-right-quote-sign"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Team Block -->
-					<div class="team-block">
-						<div class="inner-box">
-							<div class="clearfix">
-								<!-- Image Column -->
-								<div class="image-column col-lg-6 col-md-6 col-sm-12">
-									<div class="inner-column">
-										<div class="image">
-											<a href="team.html"><img src="{% static 'images/resource/team-4.png' %}" alt="" /></a>
-										</div>
-									</div>
-								</div>
-								<!-- Content Column -->
-								<div class="content-column col-lg-6 col-md-6 col-sm-12">
-									<div class="inner-column">
-										<h3><a href="team.html">Nasreen Ahmed</a></h3>
-										<div class="location">Pro VC of DU</div>
-										<div class="text"></div>
-										<div class="quote-icon flaticon-right-quote-sign"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-		<!-- End Team Section -->
-
-
-
-		<!-- Gallery Section -->
-		<section class="gallery-section">
-			<div class="auto-container">
-				<!-- Sec Title -->
-				<div class="sec-title centered">
-					<h2><span class="theme_color">Hashimukh’s Contribution to Sustainable Development Goals</span></h2>
-				</div>
-
-				<!--MixitUp Galery-->
-				<div class="mixitup-gallery">
-
-					<div class="filter-list row clearfix">
-
-						<!-- Gallery Block -->
-						<div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
-							<div class="inner-box">
-								<div class="image">
-									<img src="{% static 'images/sdg/1.png' %}" alt="" />
-								</div>
-							</div>
-						</div>
-
-						<!-- Gallery Block -->
-						<div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
-							<div class="inner-box">
-								<div class="image">
-									<img src="{% static 'images/sdg/2.png' %}" alt="" />
-								</div>
-							</div>
-						</div>
-
-						<!-- Gallery Block -->
-						<div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
-							<div class="inner-box">
-								<div class="image">
-									<img src="{% static 'images/sdg/3.jpeg' %}" alt="" />
-								</div>
-							</div>
-						</div>
-
-						<!-- Gallery Block -->
-						<div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
-							<div class="inner-box">
-								<div class="image">
-									<img src="{%  static 'images/sdg/5.png' %}" alt="" />
-								</div>
-							</div>
-						</div>
-
-						<!-- Gallery Block -->
-						<div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
-							<div class="inner-box">
-								<div class="image">
-									<img src="{% static 'images/sdg/6.png' %}" alt="" />
-								</div>
-							</div>
-						</div>
-
-						<!-- Gallery Block -->
-						<div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
-							<div class="inner-box">
-								<div class="image">
-									<img src="{% static 'images/sdg/7.png' %}" alt="" />
-								</div>
-							</div>
-						</div>
-
-						<!-- Gallery Block -->
-						<div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
-							<div class="inner-box">
-								<div class="image">
-									<img src="{% static 'images/sdg/9.png' %}" alt="" />
-								</div>
-							</div>
-						</div>
-
-						<!-- Gallery Block -->
-						<div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
-							<div class="inner-box">
-								<div class="image">
-									<img src="{% static 'images/sdg/10.png' %}" alt="" />
-								</div>
-							</div>
-						</div>
-
-						<!-- Gallery Block -->
-						<div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
-							<div class="inner-box">
-								<div class="image">
-									<img src="{% static 'images/sdg/11.png' %}" alt="" />
-								</div>
-							</div>
-						</div>
-
-						<!-- Gallery Block -->
-						<div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
-							<div class="inner-box">
-								<div class="image">
-									<img src="{% static 'images/sdg/12.png' %}" alt="" />
-								</div>
-							</div>
-						</div>
-
-						<!-- Gallery Block -->
-						<div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
-							<div class="inner-box">
-								<div class="image">
-									<img src="{% static 'images/sdg/15.jpeg' %}" alt="" />
-								</div>
-							</div>
-						</div>
-
-						<!-- Gallery Block -->
-						<div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
-							<div class="inner-box">
-								<div class="image">
-									<img src="{% static 'images/sdg/16.png' %}" alt="" />
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="load-more-btn text-center">
-					<a href="#" class="theme-btn btn-style-five">load more</a>
-				</div>
-
-			</div>
-		</section>
-		<!-- End Gallery Section -->
-
-
-
-
-
-
-		<!-- Contact Section -->
-		<section class="contact-section" style="background-image: url({% static 'images/background/map-pattern-1.png' %})">
-			<div class="auto-container">
-				<!-- Sec Title -->
-				<div class="sec-title centered">
-					<h2><span class="theme_color">Please Leave Us a </span> Message</h2>
-					<div class="text">Thank you very much for your interest in our company and our services </div>
-				</div>
-
-				<!-- Default Form -->
-				<div class="default-form">
-					<form method="post" action="https://expert-themes.com/html/Hashimukh/contact.html">
-
-						<div class="row clearfix">
-
-							<!-- Column -->
-							<div class="column col-lg-6 col-md-12 col-sm-12">
-
-								<!-- Form Group -->
-								<div class="form-group">
-									<input type="text" name="name" value="" placeholder="Username" required>
-								</div>
-								<!-- Form Group -->
-								<div class="form-group">
-									<input type="email" name="email" value="" placeholder="Email Address" required>
-								</div>
-								<!-- Form Group -->
-								<div class="form-group">
-									<input type="text" name="phone" value="" placeholder="Phone" required>
-								</div>
-
-							</div>
-
-							<!-- Column -->
-							<div class="column col-lg-6 col-md-12 col-sm-12">
-								<!-- Form Group -->
-								<div class="form-group">
-									<textarea name="message" placeholder="Message"></textarea>
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="form-group text-center col-lg-12 col-md-12 col-sm-12">
-							<button type="submit" class="theme-btn btn-style-three"><span class="txt">SEND
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Scroll Dwwn Btn-->
+        <div class="mouse-btn-down scroll-to-target" data-target=".welcome-section"></div>
+    </section>
+    <!--End Main Slider-->
+
+    <section class="welcome-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!-- Content Column -->
+                <div class="content-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-column">
+                        <h1>Welcome To <span class="theme_color"><b>Hashimukh</b></span></h1>
+
+                        <div class="text" align="center">
+                            <p align="justify">
+                                <b>Hashimukh Shomaj Kallayan Shongstha</b> is a non-profit social welfare organization
+                                working solely for the betterment of underprivileged children towards a quality life. It
+                                is supported constantly by its advisory board and executive committee with guidelines,
+                                finances, encouragements, and ideas which drive the organization to better performance
+                                each day.
+                            </p>
+                        </div>
+                        <a align="center" href="about.html" class="theme-btn btn-style-three">Join Us Now</a>
+                    </div>
+                </div>
+
+                <!-- Video Column -->
+                <div class="video-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-column">
+
+                        <!--Video Box-->
+                        <div class="video-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <figure class="video-image">
+                                <img src="{% static 'images/resource/video-img.jpg' %}" alt="">
+                            </figure>
+                            <a href="{% static 'videos/hasimukhproject.mp4' %}" class="lightbox-image overlay-box"><span
+                                    class="flaticon-play-button"><i class="ripple"></i></span></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section-two">
+        <div class="auto-container">
+            <!-- Sec Title -->
+            <div class="sec-title centered">
+                <h2><span class="theme_color">Mission & </span> Vision</h2>
+                <div class="text"><span class="theme_color">><b>Mission: </b></span> Equal participation of population
+                    to the betterment of society irrespective of class, gender, race, ethnicity, wealth, and
+                    power.<br><span class="theme_color">><b>Vision: </b></span>Equal rights for all.
+                </div>
+            </div>
+            <div class="row clearfix">
+
+                <!-- Service Block Two -->
+                <div class="service-block-two col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="icon-box">
+                            <span class="icon flaticon-money-bag"></span>
+                        </div>
+                        <h3><a href="causes-single.html">Equality</a></h3>
+                        <div class="text">Default text for Box Content.</div>
+                    </div>
+                </div>
+
+                <!-- Service Block Two -->
+                <div class="service-block-two col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="icon-box">
+                            <span class="icon flaticon-donation-2"></span>
+                        </div>
+                        <h3><a href="web/index.html">Altruism</a></h3>
+                        <div class="text">Default text for Box Content.</div>
+                    </div>
+                </div>
+
+                <!-- Service Block Two -->
+                <div class="service-block-two col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="icon-box">
+                            <span class="icon flaticon-house-1"></span>
+                        </div>
+                        <h3><a href="causes-single.html">Sharing knowledge and skills</a></h3>
+                        <div class="text">Default text for Box Content.</div>
+                    </div>
+                </div>
+
+                <!-- Service Block Two -->
+                <div class="service-block-two col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-box wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="icon-box">
+                            <span class="icon flaticon-world"></span>
+                        </div>
+                        <h3><a href="causes-single.html">Empowering the discriminated</a></h3>
+                        <div class="text">Default text for Box Content</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="auto-container">
+            <!-- Sec Title -->
+            <div class="sec-title centered">
+                <h2><span class="theme_color">Our</span> Projects</h2>
+                <div class="text">We have successfully for Underprivileged Peoples <br> completed 500+ projects</div>
+            </div>
+
+            <!--MixitUp Galery-->
+            <div class="mixitup-gallery">
+
+                <!--Filter-->
+                <div class="filters clearfix">
+
+                    <ul class="filter-tabs filter-btns text-center clearfix">
+                        <li class="active filter" data-role="button" data-filter="all">All</li>
+                        <li class="filter" data-role="button" data-filter=".homeless">HOMELESS</li>
+                        <li class="filter" data-role="button" data-filter=".charity">CHARITY</li>
+                        <li class="filter" data-role="button" data-filter=".food">FOOD HELP</li>
+                        <li class="filter" data-role="button" data-filter=".water">CLEAN WATER</li>
+                    </ul>
+
+                </div>
+
+                <div class="filter-list row clearfix">
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix water charity col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <figure>
+                                    <img src="{% static 'images/gallery/1.jpg' %}" alt=""/>
+                                    <figcaption>Education Plus Project</figcaption>
+                                </figure>
+
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <h3><a href="#">Education Plus Project</a></h3>
+                                        <div class="text">Target the community impoverished children who need to be
+                                            lifted from the depths and brought into the light.
+                                        </div>
+                                        <ul class="links">
+                                            <li><a href="project1.html" class="icon flaticon-web-link"></a></li>
+                                            <li><a href="{% static 'images/gallery/1.jpg' %}" data-fancybox="gallery"
+                                                   data-caption="" class="icon flaticon-full-screen"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix food charity col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+
+                                <figure>
+                                    <img src="{% static 'images/gallery/2.jpg' %}" alt=""/>
+                                    <figcaption>Moral Development</figcaption>
+                                </figure>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <h3><a href="#">Moral Development</a></h3>
+                                        <div class="text">Lorem ipsum dolor sit amet, vix an natum labuti eleifd, mel am
+                                            laoreetmenandri. Ei justo complectitur duo. Ei solet tos soletu possit quo.
+                                            Sea cu justo laudem.
+                                        </div>
+                                        <ul class="links">
+                                            <li><a href="project2.html" class="icon flaticon-web-link"></a></li>
+                                            <li><a href="{% static 'images/gallery/2.jpg' %}" data-fancybox="gallery"
+                                                   data-caption="" class="icon flaticon-full-screen"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix water homeless col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <figure>
+                                    <img src="{% static 'images/gallery/3.jpg' %}" alt=""/>
+                                    <figcaption>Basic Education</figcaption>
+                                </figure>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <h3><a href="#">Basic Education</a></h3>
+                                        <div class="text">Lorem ipsum dolor sit amet, vix an natum labuti eleifd, mel am
+                                            laoreetmenandri. Ei justo complectitur duo. Ei solet tos soletu possit quo.
+                                            Sea cu justo laudem.
+                                        </div>
+                                        <ul class="links">
+                                            <li><a href="project3.html" class="icon flaticon-web-link"></a></li>
+                                            <li><a href="{% static 'images/gallery/3.jpg' %}" data-fancybox="gallery"
+                                                   data-caption="" class="icon flaticon-full-screen"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix food charity col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <figure>
+                                    <img src="{% static 'images/gallery/4.jpg' %}" alt=""/>
+                                    <figcaption>IT Training</figcaption>
+                                </figure>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <h3><a href="#">IT Training</a></h3>
+                                        <div class="text">Lorem ipsum dolor sit amet, vix an natum labuti eleifd, mel am
+                                            laoreetmenandri. Ei justo complectitur duo. Ei solet tos soletu possit quo.
+                                            Sea cu justo laudem.
+                                        </div>
+                                        <ul class="links">
+                                            <li><a href="project4.html" class="icon flaticon-web-link"></a></li>
+                                            <li><a href="{% static 'images/gallery/4.jpg' %}" data-fancybox="gallery"
+                                                   data-caption="" class="icon flaticon-full-screen"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix food col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <figure>
+                                    <img src="{% static 'images/gallery/5.jpg' %}" alt=""/>
+                                    <figcaption>Women Empowerment</figcaption>
+                                </figure>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <h3><a href="#">Women Empowerment</a></h3>
+                                        <div class="text">Lorem ipsum dolor sit amet, vix an natum labuti eleifd, mel am
+                                            laoreetmenandri. Ei justo complectitur duo. Ei solet tos soletu possit quo.
+                                            Sea cu justo laudem.
+                                        </div>
+                                        <ul class="links">
+                                            <li><a href="project5.html" class="icon flaticon-web-link"></a></li>
+                                            <li><a href="{% static 'images/gallery/5.jpg' %}" data-fancybox="gallery"
+                                                   data-caption="" class="icon flaticon-full-screen"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix homeless col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <figure>
+                                    <img src="{% static 'images/gallery/6.jpg' %}" alt=""/>
+                                    <figcaption>Leadership Training</figcaption>
+                                </figure>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <h3><a href="#">Leadership Training</a></h3>
+                                        <div class="text">Lorem ipsum dolor sit amet, vix an natum labuti eleifd, mel am
+                                            laoreetmenandri. Ei justo complectitur duo. Ei solet tos soletu possit quo.
+                                            Sea cu justo laudem.
+                                        </div>
+                                        <ul class="links">
+                                            <li><a href="project6.html" class="icon flaticon-web-link"></a></li>
+                                            <li><a href="{% static 'images/gallery/6.jpg' %}" data-fancybox="gallery"
+                                                   data-caption="" class="icon flaticon-full-screen"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="load-more-btn text-center">
+                <a href="#" class="theme-btn btn-style-five">load more</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Gallery Section -->
+
+
+    <!-- News Section -->
+    <section class="news-section-two" style="background-image: url({% static 'images/background/7.jpg' %})">
+        <div class="auto-container">
+            <!-- Sec Title -->
+            <div class="sec-title light">
+                <h2><span class="theme_color">Our Latest </span> News</h2>
+            </div>
+            <div class="news-carousel owl-carousel owl-theme">
+
+                <!-- News Block Three -->
+                <div class="news-block-three">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="news_feb_12.html"><img src="{% static 'images/resource/news-12.jpg' %}"
+                                                            alt=""/></a>
+                            <div class="read-more"><a href="news_feb_12.html" class="more">Read More</a></div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="content">
+                                <div class="date-outer">
+                                    <div class="date">12</div>
+                                    <div class="month">Feb</div>
+                                </div>
+                                <h3><a href="news_feb_12.html">200 blankets distributed among the children.</a></h3>
+                                <ul class="post-meta">
+                                    <li><a href="news_feb_12.html"><span
+                                            class="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span>Comments
+                                        10</a></li>
+                                    <li><a href="news_feb_12.html"><span
+                                            class="icon far fa-folder-open"></span>Charity</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Block Three -->
+                <div class="news-block-three">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="news_may_31.html"><img src="{% static 'images/resource/news-11.jpg' %}"
+                                                            alt=""/></a>
+                            <div class="read-more"><a href="news_may_31.html" class="more">Read More</a></div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="content">
+                                <div class="date-outer">
+                                    <div class="date">31</div>
+                                    <div class="month">May</div>
+                                </div>
+                                <h3><a href="news_may_31.html">Brilliant result in SSC 2020 celebrated</a></h3>
+                                <ul class="post-meta">
+                                    <li><a href="news_may_31.html"><span
+                                            class="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span>Comments
+                                        10</a></li>
+                                    <li><a href="news_may_31.html"><span
+                                            class="icon far fa-folder-open"></span>Education</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Block Three -->
+                <div class="news-block-three">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="news_feb_29.html"><img src="{% static 'images/resource/news-13.jpg' %}"
+                                                            alt=""/></a>
+                            <div class="read-more"><a href="news_feb_29.html" class="more">Read More</a></div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="content">
+                                <div class="date-outer">
+                                    <div class="date">29</div>
+                                    <div class="month">Feb</div>
+                                </div>
+                                <h3><a href="news_feb_29.html">Art competition for the celebration of Bangabandhu's
+                                    birth year</a></h3>
+                                <ul class="post-meta">
+                                    <li><a href="news_feb_29.html"><span
+                                            class="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span>Comments
+                                        5</a></li>
+                                    <li><a href="news_feb_29.html"><span
+                                            class="icon far fa-folder-open"></span>Festival</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End News Section -->
+
+
+    <!-- Call To Action Section Three -->
+    <section class="call-to-action-section-three" style="background-image: url({% static 'images/background/6.jpg' %})">
+        <div class="auto-container">
+            <div class="title">Want to join with us</div>
+            <h2>BECOME A PROUD VOLUNTEER</h2>
+            <div class="text">When you bring together those who have, with those who have not - miracles happen.
+                <br> Become a time hero by volunteering with us. Meet new friends, gain new skills, get <br>
+                happiness and have fun!
+            </div>
+            <a href="web/index.html" class="theme-btn btn-style-five">Join With Us</a>
+        </div>
+    </section>
+    <!-- Call To Action Section Three -->
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="auto-container">
+            <!-- Sec Title -->
+            <div class="sec-title centered">
+                <h2><span class="theme_color">What Our Donors</span> Say</h2>
+                <div class="text">We have successfully for Underprivileged Peoples <br> completed 500+ projects</div>
+            </div>
+
+            <div class="team-carousel owl-carousel owl-theme">
+
+                <!-- Team Block -->
+                <div class="team-block">
+                    <div class="inner-box">
+                        <div class="clearfix">
+                            <!-- Image Column -->
+                            <div class="image-column col-lg-5 col-md-6 col-sm-12">
+                                <div class="inner-column">
+                                    <div class="image">
+                                        <a href="team.html"><img src="{% static 'images/resource/team-3.png' %}"
+                                                                 alt=""/></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Content Column -->
+                            <div class="content-column col-lg-5 col-md-6 col-sm-12">
+                                <div class="inner-column">
+                                    <h3><a href="team.html">Mohammad Awal</a></h3>
+                                    <div class="location">Owner/MD of SEL</div>
+                                    <div class="text"></div>
+                                    <div class="quote-icon flaticon-right-quote-sign"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Block -->
+                <div class="team-block">
+                    <div class="inner-box">
+                        <div class="clearfix">
+                            <!-- Image Column -->
+                            <div class="image-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-column">
+                                    <div class="image">
+                                        <a href="team.html"><img src="{% static 'images/resource/team-4.png' %}"
+                                                                 alt=""/></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Content Column -->
+                            <div class="content-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-column">
+                                    <h3><a href="team.html">Nasreen Ahmed</a></h3>
+                                    <div class="location">Pro VC of DU</div>
+                                    <div class="text"></div>
+                                    <div class="quote-icon flaticon-right-quote-sign"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Team Section -->
+
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="auto-container">
+            <!-- Sec Title -->
+            <div class="sec-title centered">
+                <h2><span class="theme_color">Hashimukh’s Contribution to Sustainable Development Goals</span></h2>
+            </div>
+
+            <!--MixitUp Galery-->
+            <div class="mixitup-gallery">
+
+                <div class="filter-list row clearfix">
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'images/sdg/1.png' %}" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'images/sdg/2.png' %}" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'images/sdg/3.jpeg' %}" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'images/sdg/5.png' %}" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'images/sdg/6.png' %}" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'images/sdg/7.png' %}" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'images/sdg/9.png' %}" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'images/sdg/10.png' %}" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'images/sdg/11.png' %}" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'images/sdg/12.png' %}" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'images/sdg/15.jpeg' %}" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block mix water charity col-lg-2 col-md-3 col-sm-6">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'images/sdg/16.png' %}" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="load-more-btn text-center">
+                <a href="#" class="theme-btn btn-style-five">load more</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Gallery Section -->
+
+
+    <!-- Contact Section -->
+    <section class="contact-section" style="background-image: url({% static 'images/background/map-pattern-1.png' %})">
+        <div class="auto-container">
+            <!-- Sec Title -->
+            <div class="sec-title centered">
+                <h2><span class="theme_color">Please Leave Us a </span> Message</h2>
+                <div class="text">Thank you very much for your interest in our company and our services</div>
+            </div>
+
+            <!-- Default Form -->
+            <div class="default-form">
+                <form method="post" action="https://expert-themes.com/html/Hashimukh/contact.html">
+
+                    <div class="row clearfix">
+
+                        <!-- Column -->
+                        <div class="column col-lg-6 col-md-12 col-sm-12">
+
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <input type="text" name="name" value="" placeholder="Username" required>
+                            </div>
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <input type="email" name="email" value="" placeholder="Email Address" required>
+                            </div>
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <input type="text" name="phone" value="" placeholder="Phone" required>
+                            </div>
+
+                        </div>
+
+                        <!-- Column -->
+                        <div class="column col-lg-6 col-md-12 col-sm-12">
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Message"></textarea>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group text-center col-lg-12 col-md-12 col-sm-12">
+                        <button type="submit" class="theme-btn btn-style-three"><span class="txt">SEND
 									NOW</span></button>
-						</div>
+                    </div>
 
-					</form>
-				</div>
-				<!--End Default Form-->
+                </form>
+            </div>
+            <!--End Default Form-->
 
-			</div>
-		</section>
-		<!-- End Contact Section -->
+        </div>
+    </section>
+    <!-- End Contact Section -->
 
-		<!--Clients Section-->
-		<section class="clients-section">
-			<div class="outer-container">
+    <!--Clients Section-->
+    <section class="clients-section">
+        <div class="outer-container">
 
-				<div class="sponsors-outer">
-					<!--Sponsors Carousel-->
-					<ul class="sponsors-carousel owl-carousel owl-theme">
-						<li class="slide-item">
-							<figure class="image-box"><a href="#"><img src="{% static 'images/clients/1.png' %}" alt=""></a></figure>
-						</li>
-						<li class="slide-item">
-							<figure class="image-box"><a href="#"><img src="{% static 'images/clients/2.png' %}" alt=""></a></figure>
-						</li>
-						<li class="slide-item">
-							<figure class="image-box"><a href="#"><img src="{% static 'images/clients/3.png' %}" alt=""></a></figure>
-						</li>
-						<li class="slide-item">
-							<figure class="image-box"><a href="#"><img src="{% static 'images/clients/4.png' %}" alt=""></a></figure>
-						</li>
-						<li class="slide-item">
-							<figure class="image-box"><a href="#"><img src="{% static 'images/clients/5.png' %}" alt=""></a></figure>
-						</li>
-						<li class="slide-item">
-							<figure class="image-box"><a href="#"><img src="{% static 'images/clients/1.png' %}" alt=""></a></figure>
-						</li>
-						<li class="slide-item">
-							<figure class="image-box"><a href="#"><img src="{% static 'images/clients/2.png' %}" alt=""></a></figure>
-						</li>
-					</ul>
-				</div>
+            <div class="sponsors-outer">
+                <!--Sponsors Carousel-->
+                <ul class="sponsors-carousel owl-carousel owl-theme">
+                    <li class="slide-item">
+                        <figure class="image-box"><a href="#"><img src="{% static 'images/clients/1.png' %}" alt=""></a>
+                        </figure>
+                    </li>
+                    <li class="slide-item">
+                        <figure class="image-box"><a href="#"><img src="{% static 'images/clients/2.png' %}" alt=""></a>
+                        </figure>
+                    </li>
+                    <li class="slide-item">
+                        <figure class="image-box"><a href="#"><img src="{% static 'images/clients/3.png' %}" alt=""></a>
+                        </figure>
+                    </li>
+                    <li class="slide-item">
+                        <figure class="image-box"><a href="#"><img src="{% static 'images/clients/4.png' %}" alt=""></a>
+                        </figure>
+                    </li>
+                    <li class="slide-item">
+                        <figure class="image-box"><a href="#"><img src="{% static 'images/clients/5.png' %}" alt=""></a>
+                        </figure>
+                    </li>
+                    <li class="slide-item">
+                        <figure class="image-box"><a href="#"><img src="{% static 'images/clients/1.png' %}" alt=""></a>
+                        </figure>
+                    </li>
+                    <li class="slide-item">
+                        <figure class="image-box"><a href="#"><img src="{% static 'images/clients/2.png' %}" alt=""></a>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
 
-			</div>
-		</section>
-		<!--End Clients Section-->
+        </div>
+    </section>
+    <!--End Clients Section-->
 
-		<!--Main Footer-->
-		<footer class="main-footer style-two" style="background-image:url({% static 'images/background/8.jpg' %})">
-			<div class="auto-container">
-				<!--Widgets Section-->
-				<div class="widgets-section">
-					<div class="row clearfix">
+    <!--Main Footer-->
+    <footer class="main-footer style-two" style="background-image:url({% static 'images/background/8.jpg' %})">
+        <div class="auto-container">
+            <!--Widgets Section-->
+            <div class="widgets-section">
+                <div class="row clearfix">
 
-						<!-- Big Column -->
-						<div class="big-column col-lg-6 col-md-12 col-sm-12">
-							<div class="row clearfix">
+                    <!-- Big Column -->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
 
-								<!--Footer Column-->
-								<div class="footer-column col-lg-7 col-md-6 col-sm-12">
-									<div class="footer-widget logo-widget">
-										<div class="logo">
-											<a href="index.html"><img src="{% static 'images/logo-11.png' %}" alt="" /></a>
-										</div>
-										<div class="text">Core values are the fundamental beliefs of a person or
-											organization. The core values are the guiding prin ples that dictate
-											behavior and action suas labore saperet has there any quote for write lorem
-											percit latineu.</div>
-										<!--Social Box-->
-										<ul class="social-box">
-											<li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-											<li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
-											<li><a href="#"><span class="fab fa-skype"></span></a></li>
-											<li><a href="#"><span class="fab fa-twitter"></span></a></li>
-											<li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-										</ul>
-									</div>
-								</div>
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                                <div class="footer-widget logo-widget">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="{% static 'images/logo-11.png' %}" alt=""/></a>
+                                    </div>
+                                    <div class="text">Core values are the fundamental beliefs of a person or
+                                        organization. The core values are the guiding prin ples that dictate
+                                        behavior and action suas labore saperet has there any quote for write lorem
+                                        percit latineu.
+                                    </div>
+                                    <!--Social Box-->
+                                    <ul class="social-box">
+                                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-skype"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
-								<!--Footer Column-->
-								<div class="footer-column col-lg-5 col-md-6 col-sm-12">
-									<div class="footer-widget links-widget">
-										<h2>Our Projects</h2>
-										<ul class="footer-list">
-											<li><a href="#">Water Surve</a></li>
-											<li><a href="#">Eduction For All</a></li>
-											<li><a href="#">Treatment</a></li>
-											<li><a href="#">Food Surve</a></li>
-											<li><a href="#">Cloth Surve</a></li>
-											<li><a href="#">Shelter Project</a></li>
-										</ul>
-									</div>
-								</div>
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+                                    <h2>Our Projects</h2>
+                                    <ul class="footer-list">
+                                        <li><a href="#">Water Surve</a></li>
+                                        <li><a href="#">Eduction For All</a></li>
+                                        <li><a href="#">Treatment</a></li>
+                                        <li><a href="#">Food Surve</a></li>
+                                        <li><a href="#">Cloth Surve</a></li>
+                                        <li><a href="#">Shelter Project</a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
-							</div>
-						</div>
+                        </div>
+                    </div>
 
-						<!-- Big Column -->
-						<div class="big-column col-lg-6 col-md-12 col-sm-12">
-							<div class="row clearfix">
-
-
-								<!--Footer Column-->
-								<div class="footer-column col-lg-5 col-md-6 col-sm-12">
-									<div class="footer-widget links-widget">
-										<h2>Quick Links</h2>
-										<ul class="footer-list">
-											<li><a href="#">About Us</a></li>
-											<li><a href="#">Donation Form</a></li>
-											<li><a href="#">Projects</a></li>
-											<li><a href="#">Events</a></li>
-											<li><a href="#">Causes</a></li>
-											<li><a href="#">Contact Us</a></li>
-										</ul>
-									</div>
-								</div>
-
-								<!--Footer Column-->
-								<div class="footer-column col-lg-5 col-md-6 col-sm-10">
-									<div class="footer-widget links-widget">
-										<h2>Contact Us</h2>
-										<ul class="footer-list">
-											<li><a href="#">73/D Central Road, Dhaka</a></li>
-											<li><a href="#">hashimukh@gmail.com</a></li>
-											<li><a href="#"> +8801994715244</a></li>
-										</ul>
-									</div>
-								</div>
+                    <!-- Big Column -->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
 
 
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+                                    <h2>Quick Links</h2>
+                                    <ul class="footer-list">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Donation Form</a></li>
+                                        <li><a href="#">Projects</a></li>
+                                        <li><a href="#">Events</a></li>
+                                        <li><a href="#">Causes</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
-							</div>
-						</div>
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-5 col-md-6 col-sm-10">
+                                <div class="footer-widget links-widget">
+                                    <h2>Contact Us</h2>
+                                    <ul class="footer-list">
+                                        <li><a href="#">73/D Central Road, Dhaka</a></li>
+                                        <li><a href="#">hashimukh@gmail.com</a></li>
+                                        <li><a href="#"> +8801994715244</a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
-					</div>
-				</div>
 
-			</div>
+                        </div>
+                    </div>
 
-			<!-- Footer Bottom -->
-			<div class="footer-bottom-two">
-				<div class="auto-container">
-					<div class="clearfix">
-						<div class="pull-left">
-							<div class="copyright">Copyrights © 2019 <a href="index-2.html">Hashimukh.</a> All rights
-								reserved.</div>
-						</div>
-						<div class="pull-right">
-							<ul class="footer-nav">
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#">Sitemap</a></li>
-								<li><a href="#">Terms of Use</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
+                </div>
+            </div>
 
-		</footer>
+        </div>
 
-	</div>
-	<!--End pagewrapper-->
+        <!-- Footer Bottom -->
+        <div class="footer-bottom-two">
+            <div class="auto-container">
+                <div class="clearfix">
+                    <div class="pull-left">
+                        <div class="copyright">Copyrights © 2019 <a href="index-2.html">Hashimukh.</a> All rights
+                            reserved.
+                        </div>
+                    </div>
+                    <div class="pull-right">
+                        <ul class="footer-nav">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<!--Scroll to top-->
-	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
+    </footer>
 
-	<!-- sidebar cart item -->
-	<div class="xs-sidebar-group info-group">
-		<div class="xs-overlay xs-bg-black"></div>
-		<div class="xs-sidebar-widget">
-			<div class="sidebar-widget-container">
-				<div class="widget-heading">
-					<a href="#" class="close-side-widget">
-						X
-					</a>
-				</div>
-				<div class="sidebar-textwidget">
+</div>
+<!--End pagewrapper-->
 
-					<!-- Sidebar Info Content -->
-					<div class="sidebar-info-contents">
-						<div class="content-inner">
-							<div class="logo">
-								<a href="index-2.html"><img src="{% static 'images/logo-6.png' %}" alt="" /></a>
-							</div>
-							<div class="content-box">
-								<h2>About Us</h2>
-								<p class="text">Core values are the fundamental beliefs of a person or organization. The
-									core values are the guiding prin ples that dictate behavior and action suas labore
-									saperet has there any quote for write lorem percit latineu.</p>
-								<a href="#" class="theme-btn btn-style-three"><i>Consultation</i></a>
-							</div>
-							<div class="contact-info">
-								<h2>Contact Info</h2>
-								<ul class="list-style-one">
-									<li><span class="icon flaticon-map-1"></span>73/D Central Road, Dhanmondi, Dhaka.</li>
-									<li><span class="icon flaticon-telephone"></span>(111) 111-111-1111</li>
-									<li><span class="icon flaticon-message-1"></span>hashimukh.socialwelfare.bd@gmail.com</li>
-									<li><span class="icon flaticon-timetable"></span>Week Days: 09.00 to 18.00 Sunday:
-										Closed</li>
-								</ul>
-							</div>
-							<!-- Social Box -->
-							<ul class="social-box">
-								<li class="facebook"><a href="#" class="fab fa-facebook-f"></a></li>
-								<li class="twitter"><a href="#" class="fab fa-twitter"></a></li>
-								<li class="linkedin"><a href="#" class="fab fa-linkedin-in"></a></li>
-								<li class="instagram"><a href="#" class="fab fa-instagram"></a></li>
-								<li class="youtube"><a href="#" class="fab fa-youtube"></a></li>
-							</ul>
-						</div>
-					</div>
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
 
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END sidebar widget item -->
+<!-- sidebar cart item -->
+<div class="xs-sidebar-group info-group">
+    <div class="xs-overlay xs-bg-black"></div>
+    <div class="xs-sidebar-widget">
+        <div class="sidebar-widget-container">
+            <div class="widget-heading">
+                <a href="#" class="close-side-widget">
+                    X
+                </a>
+            </div>
+            <div class="sidebar-textwidget">
 
-	<!-- xs modal -->
-	<div class="zoom-anim-dialog mfp-hide modal-searchPanel" id="modal-popup-2">
-		<div class="xs-search-panel">
-			<form action="#" method="POST" class="xs-search-group">
-				<input type="search" class="form-control" name="search" id="search" placeholder="Search">
-				<button type="submit" class="search-button"><i class="icon icon-search"></i></button>
-			</form>
-		</div>
-	</div><!-- End xs modal -->
-	<!-- end language switcher strart -->
+                <!-- Sidebar Info Content -->
+                <div class="sidebar-info-contents">
+                    <div class="content-inner">
+                        <div class="logo">
+                            <a href="index-2.html"><img src="{% static 'images/logo-6.png' %}" alt=""/></a>
+                        </div>
+                        <div class="content-box">
+                            <h2>About Us</h2>
+                            <p class="text">Core values are the fundamental beliefs of a person or organization. The
+                                core values are the guiding prin ples that dictate behavior and action suas labore
+                                saperet has there any quote for write lorem percit latineu.</p>
+                            <a href="#" class="theme-btn btn-style-three"><i>Consultation</i></a>
+                        </div>
+                        <div class="contact-info">
+                            <h2>Contact Info</h2>
+                            <ul class="list-style-one">
+                                <li><span class="icon flaticon-map-1"></span>73/D Central Road, Dhanmondi, Dhaka.</li>
+                                <li><span class="icon flaticon-telephone"></span>(111) 111-111-1111</li>
+                                <li><span class="icon flaticon-message-1"></span>hashimukh.socialwelfare.bd@gmail.com
+                                </li>
+                                <li><span class="icon flaticon-timetable"></span>Week Days: 09.00 to 18.00 Sunday:
+                                    Closed
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Social Box -->
+                        <ul class="social-box">
+                            <li class="facebook"><a href="#" class="fab fa-facebook-f"></a></li>
+                            <li class="twitter"><a href="#" class="fab fa-twitter"></a></li>
+                            <li class="linkedin"><a href="#" class="fab fa-linkedin-in"></a></li>
+                            <li class="instagram"><a href="#" class="fab fa-instagram"></a></li>
+                            <li class="youtube"><a href="#" class="fab fa-youtube"></a></li>
+                        </ul>
+                    </div>
+                </div>
 
-	<script src="{% static 'js/jquery.js' %}"></script>
-	<script src="{% static 'js/popper.min.js' %}"></script>
-	<script src="{% static 'js/bootstrap.min.js' %}"></script>
-	<script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
-	<script src="{% static 'js/jquery.fancybox.js' %}"></script>
-	<script src="{% static 'js/appear.js' %}"></script>
-	<script src="{% static 'js/owl.js' %}"></script>
-	<script src="{% static 'js/wow.js' %}"></script>
-	<script src="{% static 'js/mixitup.js' %}"></script>
-	<script src="{% static 'js/slick.js' %}"></script>
-	<script src="{% static 'js/nav-tool.js' %}"></script>
-	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-	<script src="{% static 'js/main.js' %}"></script>
-	<script src="{% static 'js/jquery-ui.js' %}"></script>
-	<script src="{% static 'js/script.js' %}"></script>
-	<script src="{% static 'js/color-settings.js' %}"></script>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END sidebar widget item -->
+
+<!-- xs modal -->
+<div class="zoom-anim-dialog mfp-hide modal-searchPanel" id="modal-popup-2">
+    <div class="xs-search-panel">
+        <form action="#" method="POST" class="xs-search-group">
+            <input type="search" class="form-control" name="search" id="search" placeholder="Search">
+            <button type="submit" class="search-button"><i class="icon icon-search"></i></button>
+        </form>
+    </div>
+</div><!-- End xs modal -->
+<!-- end language switcher strart -->
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/owl.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/mixitup.js' %}"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+<script src="{% static 'js/nav-tool.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/color-settings.js' %}"></script>
 
 </body>
 
