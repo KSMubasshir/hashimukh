@@ -226,56 +226,19 @@
                     <div class="news-detail">
                         <div class="inner-box">
                             <div class="image">
-                                <img src="{% static 'images/resource/news_17_mar_22.jpg' %}" alt=""/>
+                                <img src="{{ all_news_list.news_image }}" alt=""/>
                             </div>
                             <div class="lower-content">
                                 <div class="content">
                                     <div class="date-outer">
                                         <div class="date">17</div>
-                                        <div class="month">Mar</div>
+                                        <div class="month">{{ all_news_list.news_publish_date }}</div>
                                     </div>
                                     <ul class="post-meta">
                                     </ul>
-                                    <h3>Celebrating the birth century of the Father of the Nation and National
-                                        Children’s Day</h3>
+                                    <h3>{{ all_news_list.news_title }}</h3>
                                     <div class="text">
-                                        <p>
-                                            To celebrate the birth centenary of the Father of the Nation, Bangabandhu
-                                            Sheikh Mujibur Rahman, and National Children's Day on March 17, 2022,
-                                            Hasimukh Somaj Kallayan Songstha has successfully hosted a day-long
-                                            Adolescent and Reproductive Health Awareness, Educational and Primary Health
-                                            check-up program for the children and their respective parents. Children
-                                            from Hashimukh and Meherunnessa School, and their parents attended the
-                                            program. The program included health education and awareness sessions for
-                                            8–13-year-old girls and their parents. Furthermore, there were educational
-                                            sessions on reproductive organs, discussions on common adolescent and
-                                            reproductive health issues, health and hygiene, nutrition and diet, ethics
-                                            and social values, male and female relationships and mutual respect, and
-                                            mental health issues, followed by an awareness question-and-answer session
-                                            for parents. The program included various other sessions as well as primary
-                                            health care activities.
-                                        </p>
-                                        <p>
-                                            Special credit goes to Vraman Konya (Travellers) for taking part in the
-                                            program and training our children in a very effective way.
-                                        </p>
-                                        <p>
-                                            We want to extend our thanks to Square Toiletries Ltd. for sponsoring
-                                            sanitary napkins and hand sanitizer. Sanitary napkins were distributed among
-                                            300 girls and women and there were two booths giving out the hand sanitizer.
-                                            Around 500 children received hand sanitizer from these booths.
-                                        </p>
-                                        <p>
-                                            While menstrual hygiene is of utmost importance, girls and women in our
-                                            society still shy away from even mentioning it as it is deemed taboo. Giving
-                                            away free sanitary napkins not only created awareness among them but also
-                                            made them get acquainted with it. They were able to experience the benefits
-                                            of wearing pads during menstruation.
-                                        </p>
-                                        <p>
-                                            It was truly a learning and knowledge-gaining experience for the students
-                                            and their parents.
-                                        </p>
+                                        {{ all_news_list.news_content }}
                                     </div>
                                     <!--Social Box-->
                                     <ul class="social-box">
@@ -587,7 +550,7 @@
                 <div class="sidebar-info-contents">
                     <div class="content-inner">
                         <div class="logo">
-                            <a href="index.html"><img src="images/logo-12.png" alt=""/></a>
+                            <a href="{% url 'index' %}"><img src="{% static 'images/logo-12.png' %}" alt=""/></a>
                         </div>
                         <div class="content-box">
                             <h2>About Us</h2>
