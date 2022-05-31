@@ -727,146 +727,34 @@
             </div>
             <div class="news-carousel owl-carousel owl-theme">
 
-                <!-- News Block Three -->
-                <div class="news-block-three">
-                    <div class="inner-box">
-                        <div class="image">
-                            <a href="news_25_may_22.html"><img src="{% static 'images/resource/news_25_may_22.png' %}"
-                                                            alt=""/></a>
-                            <div class="read-more"><a href="news_25_may_22.html" class="more">Read More</a></div>
-                        </div>
-                        <div class="lower-content">
-                            <div class="content">
-                                <div class="date-outer">
-                                    <div class="date">25</div>
-                                    <div class="month">May, 2022</div>
-                                </div>
-                                <h3><a href="news_25_may_22.html">Alumna of Hashimukh Secures a Seat at the Nursing and Midwifery College, Habigonj</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% for news in all_news_list %}
 
-                <!-- News Block Three -->
-                <div class="news-block-three">
-                    <div class="inner-box">
-                        <div class="image">
-                            <a href="news_22_may_22.html"><img src="{% static 'images/resource/news_22_may_22.jpg' %}"
-                                                            alt=""/></a>
-                            <div class="read-more"><a href="news_22_may_22.html" class="more">Read More</a></div>
-                        </div>
-                        <div class="lower-content">
-                            <div class="content">
-                                <div class="date-outer">
-                                    <div class="date">22</div>
-                                    <div class="month">May, 2022</div>
-                                </div>
-                                <h3><a href="news_22_may_22.html">Capacity Enhancement: Graphic Design Training for Senior Students</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <!-- News Block Three -->
+                    <div class="news-block-three">
 
-                <!-- News Block Three -->
-                <div class="news-block-three">
-                    <div class="inner-box">
-                        <div class="image">
-                            <a href="news_29_apr_22.html"><img src="{% static 'images/resource/news_29_apr_22.jpg' %}"
-                                                            alt=""/></a>
-                            <div class="read-more"><a href="news_29_apr_22.html" class="more">Read More</a></div>
-                        </div>
-                        <div class="lower-content">
-                            <div class="content">
-                                <div class="date-outer">
-                                    <div class="date">29</div>
-                                    <div class="month">Apr, 2022</div>
-                                </div>
-                                <h3><a href="news_29_apr_22.html">Distribution of New Clothes and Dry Food  Ahead of Eid-ul-Fitr 2022</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <div class="inner-box">
 
-                <!-- News Block Three -->
-                <div class="news-block-three">
-                    <div class="inner-box">
-                        <div class="image">
-                            <a href="news_17_mar_22.html"><img src="{% static 'images/resource/news_17_mar_22.jpg' %}"
-                                                            alt=""/></a>
-                            <div class="read-more"><a href="news_17_mar_22.html" class="more">Read More</a></div>
-                        </div>
-                        <div class="lower-content">
-                            <div class="content">
-                                <div class="date-outer">
-                                    <div class="date">17</div>
-                                    <div class="month">Mar, 2022</div>
-                                </div>
-                                <h3><a href="news_17_mar_22.html">Celebrating the birth century of the Father of the Nation and National Children’s Day</a></h3>
+                            <div class="image">
+                                <a href="{% url 'news' %}">
+                                    <img src="{{ news.news_image.url }}" alt=""/>
+                                </a>
+                                <div class="read-more"><a href="{% url 'news' %}" class="more">Read More</a></div>
                             </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- News Block Three -->
-                <div class="news-block-three">
-                    <div class="inner-box">
-                        <div class="image">
-                            <a href="news_feb_12.html"><img src="{% static 'images/resource/news-12.jpg' %}"
-                                                            alt=""/></a>
-                            <div class="read-more"><a href="news_feb_12.html" class="more">Read More</a></div>
-                        </div>
-                        <div class="lower-content">
-                            <div class="content">
-                                <div class="date-outer">
-                                    <div class="date">12</div>
-                                    <div class="month">Feb, 2020</div>
+                            <div class="lower-content">
+                                <div class="content">
+                                    <div class="date-outer">
+                                        <div class="date">{{ news.news_publish_date|date:'d' }}</div>
+                                        <div class="month" >{{ news.news_publish_date|date:'d/m/y' }}</div>
+                                    </div>
+                                    <h3><a href="{% url 'news' %}">{{ news.news_title }}</a></h3>
                                 </div>
-                                <h3><a href="news_feb_12.html">200 blankets distributed among the children.</a></h3>
                             </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- News Block Three -->
-                <div class="news-block-three">
-                    <div class="inner-box">
-                        <div class="image">
-                            <a href="news_may_31.html"><img src="{% static 'images/resource/news-11.jpg' %}"
-                                                            alt=""/></a>
-                            <div class="read-more"><a href="news_may_31.html" class="more">Read More</a></div>
-                        </div>
-                        <div class="lower-content">
-                            <div class="content">
-                                <div class="date-outer">
-                                    <div class="date">31</div>
-                                    <div class="month">May, 2019</div>
-                                </div>
-                                <h3><a href="news_may_31.html">Brilliant result in SSC 2020 celebrated</a></h3>
-                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- News Block Three -->
-                <div class="news-block-three">
-                    <div class="inner-box">
-                        <div class="image">
-                            <a href="news_feb_29.html"><img src="{% static 'images/resource/news-13.jpg' %}"
-                                                            alt=""/></a>
-                            <div class="read-more"><a href="news_feb_29.html" class="more">Read More</a></div>
-                        </div>
-                        <div class="lower-content">
-                            <div class="content">
-                                <div class="date-outer">
-                                    <div class="date">29</div>
-                                    <div class="month">Feb, 2019</div>
-                                </div>
-                                <h3><a href="news_feb_29.html">Art competition for the celebration of Bangabandhu's
-                                    birth year</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
 
             </div>
         </div>
@@ -1370,7 +1258,12 @@
     </div>
 </div><!-- End xs modal -->
 <!-- end language switcher strart -->
-
+<script type="text/javascript">
+    var month_name = function(dt){
+    mlist = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+    return mlist[dt];
+};
+</script>
 <script src="{% static 'js/jquery.js' %}"></script>
 <script src="{% static 'js/popper.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>

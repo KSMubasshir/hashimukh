@@ -7,7 +7,8 @@ from .models import News
 
 def index(request):
     template = loader.get_template('home/index.html')
-    context = {}
+    all_news_list = News.objects.all()
+    context = {'all_news_list': all_news_list}
     return HttpResponse(template.render(context, request))
 
 
