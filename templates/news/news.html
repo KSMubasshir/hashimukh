@@ -226,19 +226,19 @@
                     <div class="news-detail">
                         <div class="inner-box">
                             <div class="image">
-                                <img src="{{ all_news_list.news_image.url }}" alt=""/>
+                                <img src="{{ news.news_image.url }}" alt=""/>
                             </div>
                             <div class="lower-content">
                                 <div class="content">
                                     <div class="date-outer">
-                                        <div class="date">17</div>
-                                        <div class="month">{{ all_news_list.news_publish_date }}</div>
+                                        <div class="date">{{ news.news_publish_date|date:'d' }}</div>
+                                        <div class="month">{{ news.news_publish_date|date:'d/m/y' }}</div>
                                     </div>
                                     <ul class="post-meta">
                                     </ul>
-                                    <h3>{{ all_news_list.news_title }}</h3>
+                                    <h3>{{ news.news_title }}</h3>
                                     <div class="text">
-                                        {{ all_news_list.news_content }}
+                                        {{ news.news_content }}
                                     </div>
                                     <!--Social Box-->
                                     <ul class="social-box">

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
     <meta charset="utf-8">
     <title>Hashimukh|Home </title>
@@ -538,6 +537,7 @@
             </div>
         </div>
     </section>
+
     <!-- Gallery Section -->
     <section class="gallery-section">
         <div class="auto-container">
@@ -741,7 +741,6 @@
     </section>
     <!-- End Gallery Section -->
 
-
     <!-- News Section -->
     <section class="news-section-two" style="background-image: url({% static 'images/background/7.jpg' %})">
         <div class="auto-container">
@@ -759,10 +758,10 @@
                         <div class="inner-box">
 
                             <div class="image">
-                                <a href="{% url 'news' %}">
+                                <a href="news/{{ news.news_id }}">
                                     <img src="{{ news.news_image.url }}" alt=""/>
                                 </a>
-                                <div class="read-more"><a href="{% url 'news' %}" class="more">Read More</a></div>
+                                <div class="read-more"><a href="news/{{ news.news_id }}" class="more">Read More</a></div>
                             </div>
 
                             <div class="lower-content">
@@ -771,7 +770,7 @@
                                         <div class="date">{{ news.news_publish_date|date:'d' }}</div>
                                         <div class="month">{{ news.news_publish_date|date:'d/m/y' }}</div>
                                     </div>
-                                    <h3><a href="{% url 'news' %}">{{ news.news_title }}</a></h3>
+                                    <h3><a href="news/{{ news.news_id }}">{{ news.news_title }}</a></h3>
                                 </div>
                             </div>
 
@@ -784,7 +783,6 @@
         </div>
     </section>
     <!-- End News Section -->
-
 
     <!-- Call To Action Section Three -->
     <section class="call-to-action-section-three" style="background-image: url({% static 'images/background/6.jpg' %})">
@@ -859,7 +857,6 @@
         </div>
     </section>
     <!-- End Team Section -->
-
 
     <!-- Gallery Section -->
     <section class="gallery-section">
@@ -992,7 +989,6 @@
         </div>
     </section>
     <!-- End Gallery Section -->
-
 
     <!-- Contact Section -->
     <section class="contact-section" style="background-image: url({% static 'images/background/map-pattern-1.png' %})">
