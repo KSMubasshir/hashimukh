@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-b6$hy5j3d^n#gq15jflht)9$&ql+!p6f*t!bt(zcmigo7&t9o-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hashimukhbd.com']
+ALLOWED_HOSTS = ['hashimukhbd.com',
+                 '127.0.0.1']
 
 
 # Application definition
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'hashimukh'
 ]
 
 MIDDLEWARE = [
@@ -89,7 +91,7 @@ WSGI_APPLICATION = 'hashimukhDjangoProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
     }
 }
 
@@ -127,15 +129,19 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
-print(BASE_DIR)
-STATIC_URL = 'hashimukh/statics/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'hashimukh/statics')
-# STATIC_ROOT = '/home/hashzbix/hashimukh/hashimukh/statics/'
+STATIC_URL = 'static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, '/statics')
+# # STATIC_ROOT = '/home/hashzbix/hashimukh/hashimukh/statics/'
 
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'statics'),
-# ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'statics'),
+]
 
+MEDIA_URL = '/media/'
+
+# Path where media is stored
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

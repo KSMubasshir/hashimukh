@@ -18,6 +18,6 @@ def contact(request):
 
 
 def news(request):
-    all_news_list = News.objects.all()[0]
+    all_news_list = News.objects.get(news_title="200 blankets distributed among the children")
     context = {'all_news_list': all_news_list}
     return render(request, 'news/news.html', context)

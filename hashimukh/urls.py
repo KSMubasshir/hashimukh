@@ -15,4 +15,5 @@ urlpatterns = [
 
 # add this line to link the static files in the url
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
  
