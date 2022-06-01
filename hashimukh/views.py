@@ -18,7 +18,7 @@ def contact(request):
     return HttpResponse(template.render(context, request))
 
 
-def news(request, newsId):
-    news = News.objects.get(news_id=newsId)
+def news(request, news_id):
+    news = News.objects.get(news_id=news_id)
     context = {'news': news}
     return render(request, 'news/news.html', context)

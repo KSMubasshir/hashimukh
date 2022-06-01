@@ -361,7 +361,6 @@
         <!--End Sticky Header-->
 
     </header>
-
     <!--End Main Header -->
 
     <!--Main Slider-->
@@ -758,10 +757,11 @@
                         <div class="inner-box">
 
                             <div class="image">
-                                <a href="news/{{ news.news_id }}">
+                                <a href="{% url 'news' news.news_id %}">
                                     <img src="{{ news.news_image.url }}" alt=""/>
                                 </a>
-                                <div class="read-more"><a href="news/{{ news.news_id }}" class="more">Read More</a></div>
+                                <div class="read-more"><a href="{% url 'news' news.news_id %}" class="more">Read More</a>
+                                </div>
                             </div>
 
                             <div class="lower-content">
@@ -770,7 +770,7 @@
                                         <div class="date">{{ news.news_publish_date|date:'d' }}</div>
                                         <div class="month">{{ news.news_publish_date|date:'d/m/y' }}</div>
                                     </div>
-                                    <h3><a href="news/{{ news.news_id }}">{{ news.news_title }}</a></h3>
+                                    <h3><a href="{% url 'news' news.news_id %}">{{ news.news_title }}</a></h3>
                                 </div>
                             </div>
 
@@ -823,7 +823,7 @@
                     <!-- Content Column -->
                     <div class="">
                         <div class="row">
-                            <div class="col-6"></div>
+                            <div class="col-2"></div>
                             <div class="col-6">
                                 <h5><a href="#">Mohammad Awal</a></h5>
                                 <div class="location">Owner/MD of SEL</div>
@@ -843,7 +843,7 @@
                     <!-- Content Column -->
                     <div class="">
                         <div class="row">
-                            <div class="col-6"></div>
+                            <div class="col-2"></div>
                             <div class="col-6">
                                 <h5><a href="#">Nasreen Ahmed</a></h5>
                                 <div class="location">Pro VC of DU</div>
@@ -1271,12 +1271,7 @@
     </div>
 </div><!-- End xs modal -->
 <!-- end language switcher strart -->
-<script type="text/javascript">
-    var month_name = function (dt) {
-        mlist = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-        return mlist[dt];
-    };
-</script>
+
 <script src="{% static 'js/jquery.js' %}"></script>
 <script src="{% static 'js/popper.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
