@@ -52,11 +52,12 @@
 
                     <!--Top Right-->
                     <div class="top-right col-lg-7 col-md-12 col-sm-12">
-                        <div class="question">You have any question? <a href="tel:+8801994715244">+8801994715244</a>
+                        <div class="question">Do you have any question? <a href="tel:+8801994715244">+8801994715244</a>
                         </div>
                         <!--Social Box-->
                         <ul class="social-box">
-                            <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                            <li><a href="https://www.facebook.com/hsksbd" target="_blank"><span
+                                    class="fab fa-facebook-f"></span></a></li>
                             <li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
                             <li><a href="#"><span class="fab fa-skype"></span></a></li>
                             <li><a href="#"><span class="fab fa-twitter"></span></a></li>
@@ -72,10 +73,21 @@
         <div class="header-upper">
             <div class="auto-container">
                 <div class="clearfix">
-
                     <div class="pull-left logo-box">
-                        <div class="logo"><a href="{% static 'index.html' %}"><img
-                                src="{% static 'images/logo-12.png' %}" alt="" title=""></a></div>
+                        <div class="logo">
+                            <a href="{% url 'index' %}">
+                                <img src="{% static 'images/logo-main.png' %}" alt="" title=""
+                                     style="height: 80px; width: 100px">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pull-left logo-box">
+                        <div class="logo">
+                            <a href="{% url 'index' %}">
+                                <img src="{% static 'images/logo-12.png' %}" style="height: 80px; width: 180px" alt=""
+                                     title="">
+                            </a>
+                        </div>
                     </div>
 
                     <div class="pull-right upper-right">
@@ -134,8 +146,11 @@
 
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
+                                <li><a href="{% url 'index' %}">Home</a></li>
+                                <li class="dropdown has-mega-menu"><a href="#">Projects</a></li>
+                                <li class="dropdown"><a href="#">Blogs</a></li>
                                 <li><a href="https://forms.gle/Vdeqp8RtsutuWYat5" target="_blank">Join us</a></li>
-                                <li><a href="donation.html" class="theme-btn donate-btn">Donate Now</a></li>
+                                <li><a href="#" class="theme-btn donate-btn">Donate Now</a></li>
                                 <li><a href="{% url 'contact' %}">Contact us</a></li>
                             </ul>
                         </div>
@@ -162,9 +177,18 @@
         <div class="sticky-header">
             <div class="auto-container clearfix">
                 <!--Logo-->
+                <div class="pull-left logo-box">
+                    <div class="logo">
+                        <a href="{% url 'index' %}">
+                            <img src="{% static 'images/logo-main.png' %}" alt="" title=""
+                                 style="height: 100px; width: 150px">
+                        </a>
+                    </div>
+                </div>
                 <div class="logo pull-left">
-                    <a href="{% url 'index' %}" class="img-responsive"><img src="{% static 'images/logo-12.png' %}"
-                                                                            alt="" title=""></a>
+                    <a href="{% url 'index' %}" class="img-responsive">
+                        <img src="{% static 'images/logo-12.png' %}" alt="" title="">
+                    </a>
                 </div>
 
                 <!--Right Col-->
@@ -181,8 +205,11 @@
 
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
                             <ul class="navigation clearfix">
+                                <li><a href="{% url 'index' %}">Home</a></li>
+                                <li class="dropdown has-mega-menu"><a href="#">Projects</a></li>
+                                <li class="dropdown"><a href="#">Blogs</a></li>
                                 <li><a href="https://forms.gle/Vdeqp8RtsutuWYat5" target="_blank">Join us</a></li>
-                                <li><a href="donation.html" class="theme-btn donate-btn">Donate Now</a></li>
+                                <li><a href="#" class="theme-btn donate-btn">Donate Now</a></li>
                                 <li><a href="{% url 'contact' %}">Contact us</a></li>
                             </ul>
                         </div>
@@ -322,7 +349,7 @@
                                 <h2>Need Help?</h2>
                             </div>
                             <div class="widget-content">
-                                <div class="text">if you have any question please don’t hesitate to contact us</div>
+                                <div class="text">If you have any question please don’t hesitate to contact us</div>
                                 <ul class="list">
                                     <li><span class="icon fas fa-phone-volume"></span>123 456 7890</li>
                                     <li><span class="icon fas fa-envelope"></span>info@Hashimukh.com use contact Form
@@ -392,17 +419,18 @@
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
                                     <div class="logo">
-                                        <a href="{% url 'index' %}"><img src="{% static 'images/logo-11.png' %}"
-                                                                         alt=""/></a>
+                                        <a href="{% url 'index' %}">
+                                            <img src="{% static 'images/logo-11.png' %}" alt=""/>
+                                        </a>
                                     </div>
                                     <div class="text">Core values are the fundamental beliefs of a person or
-                                        organization. The core values are the guiding prin ples that dictate behavior
-                                        and action suas labore saperet has there any quote for write lorem percit
-                                        latineu.
+                                        organization. The core values are the guidance that dictate
+                                        behavior and action.
                                     </div>
                                     <!--Social Box-->
                                     <ul class="social-box">
-                                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="https://www.facebook.com/hsksbd" target="_blank"><span
+                                                class="fab fa-facebook-f"></span></a></li>
                                         <li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
                                         <li><a href="#"><span class="fab fa-skype"></span></a></li>
                                         <li><a href="#"><span class="fab fa-twitter"></span></a></li>
@@ -550,7 +578,16 @@
                 <div class="sidebar-info-contents">
                     <div class="content-inner">
                         <div class="logo">
-                            <a href="{% url 'index' %}"><img src="{% static 'images/logo-12.png' %}" alt=""/></a>
+                            <a href="{% url 'index' %}">
+                                <img src="{% static 'images/logo-main.png' %}" style="height: 100px; width: 100px"
+                                     alt="" title="" style="height: 100px; width: 150px">
+                            </a>
+                        </div>
+                        <div class="logo">
+                            <a href="{% url 'index' %}">
+                                <img src="{% static 'images/logo-12.png' %}" style="height: 100px; width: 100px"
+                                     alt=""/>
+                            </a>
                         </div>
                         <div class="content-box">
                             <h2>About Us</h2>
@@ -573,7 +610,8 @@
                         </div>
                         <!-- Social Box -->
                         <ul class="social-box">
-                            <li class="facebook"><a href="#" class="fab fa-facebook-f"></a></li>
+                            <li class="facebook"><a href="https://www.facebook.com/hsksbd" target="_blank"
+                                                    class="fab fa-facebook-f"></a></li>
                             <li class="twitter"><a href="#" class="fab fa-twitter"></a></li>
                             <li class="linkedin"><a href="#" class="fab fa-linkedin-in"></a></li>
                             <li class="instagram"><a href="#" class="fab fa-instagram"></a></li>
