@@ -10,7 +10,8 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('contact/', views.contact, name='contact'),
     path('admin/', admin.site.urls, name='admin'),
-    path('<int:news_id>', views.news, name='news'),
+    path('news/<int:news_id>', views.news, name='news'),
+    path('projects/<int:project_id>', views.project, name='project'),
 ]
 
 # add this line to link the static files in the url

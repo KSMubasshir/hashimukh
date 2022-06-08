@@ -1,9 +1,10 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import News
+from .models import News, Project
 
 admin.site.register(News)
+admin.site.register(Project)
 
 
 class AuthorAdmin(admin.ModelAdmin):

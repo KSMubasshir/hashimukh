@@ -12,3 +12,15 @@ class News(models.Model):
 
     def __str__(self):
         return self.news_title
+
+
+class Project(models.Model):
+    project_id = models.AutoField(primary_key=True)
+    project_title = models.TextField()
+    project_publish_date = models.DateField()
+    project_image = models.ImageField(upload_to='images')
+    project_tagline = models.TextField()
+    project_content = models.TextField()
+
+    def __str__(self):
+        return self.project_title
