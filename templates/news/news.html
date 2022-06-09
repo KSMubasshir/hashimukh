@@ -147,8 +147,40 @@
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
                                 <li><a href="{% url 'index' %}">Home</a></li>
-                                <li class="dropdown has-mega-menu"><a href="#">Projects</a></li>
-                                <li class="dropdown"><a href="#">Blogs</a></li>
+                                <li class="dropdown">
+                                    <a href="#">Projects</a>
+                                    <ul>
+                                        {% for project in all_project_list %}
+                                            <li>
+                                                <div class="card">
+                                                    <div class="text">
+                                                        <a href={% url 'project' project.project_id %}>
+                                                            {{ project.project_title }}
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">Events</a>
+                                    <ul>
+                                        {% for news in all_news_list %}
+                                            <li>
+                                                <div class="card">
+                                                    <div class="text">
+                                                        {{ news.news_publish_date }}
+                                                        <br>
+                                                        <a href={% url 'news' news.news_id %}>
+                                                            {{ news.news_title }}
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
                                 <li><a href="https://forms.gle/Vdeqp8RtsutuWYat5" target="_blank">Join us</a></li>
                                 <li><a href="#" class="theme-btn donate-btn">Donate Now</a></li>
                                 <li><a href="{% url 'contact' %}">Contact us</a></li>
@@ -206,8 +238,40 @@
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
                             <ul class="navigation clearfix">
                                 <li><a href="{% url 'index' %}">Home</a></li>
-                                <li class="dropdown has-mega-menu"><a href="#">Projects</a></li>
-                                <li class="dropdown"><a href="#">Blogs</a></li>
+                                <li class="dropdown">
+                                    <a href="#">Projects</a>
+                                    <ul>
+                                        {% for project in all_project_list %}
+                                            <li>
+                                                <div class="card">
+                                                    <div class="text">
+                                                        <a href={% url 'project' project.project_id %}>
+                                                            {{ project.project_title }}
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">Events</a>
+                                    <ul>
+                                        {% for news in all_news_list %}
+                                            <li>
+                                                <div class="card">
+                                                    <div class="text">
+                                                        {{ news.news_publish_date }}
+                                                        <br>
+                                                        <a href={% url 'news' news.news_id %}>
+                                                            {{ news.news_title }}
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
                                 <li><a href="https://forms.gle/Vdeqp8RtsutuWYat5" target="_blank">Join us</a></li>
                                 <li><a href="#" class="theme-btn donate-btn">Donate Now</a></li>
                                 <li><a href="{% url 'contact' %}">Contact us</a></li>
