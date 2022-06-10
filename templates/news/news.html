@@ -381,29 +381,19 @@
                                 <h2>Latest posts</h2>
                             </div>
                             <div class="widget-content">
-                                <article class="post">
-                                    <figure class="post-thumb"><a href="news_may_31.html"><img
-                                            src="{% static 'images/resource/post-thumb-1.jpg' %}" alt=""></a></figure>
-                                    <div class="text"><a href="news_may_31.html">Brilliant result in SSC 2020
-                                        celebrated</a></div>
-                                    <div class="post-info">May 31, 2020</div>
-                                </article>
-
-                                <article class="post">
-                                    <figure class="post-thumb"><a href="news_feb_12.html"><img
-                                            src="{% static 'images/resource/post-thumb-2.jpg' %}" alt=""></a></figure>
-                                    <div class="text"><a href="news_feb_12.html">200 blankets distributed among the
-                                        children</a></div>
-                                    <div class="post-info">Feb 12, 2020</div>
-                                </article>
-
-                                <article class="post">
-                                    <figure class="post-thumb"><a href="news_feb_29.html"><img
-                                            src="{% static 'images/resource/post-thumb-3.jpg' %}" alt=""></a></figure>
-                                    <div class="text"><a href="news_feb_29.html">Art competition for the celebration of
-                                        Bangabandhu's birth year</a></div>
-                                    <div class="post-info">Feb 29, 2020</div>
-                                </article>
+                                {% for news in all_news_list|slice:":2" %}
+                                    <article class="post">
+                                        <figure class="post-thumb"><a href={% url 'news' news.news_id %}><img
+                                                src="{{ news.news_image.url }}" alt=""></a>
+                                        </figure>
+                                        <div class="text-sm-left">
+                                            <a href={% url 'news' news.news_id %}>
+                                                {{ news.news_title }}
+                                            </a>
+                                        </div>
+                                        <div class="post-info">{{ news.news_publish_date }}</div>
+                                    </article>
+                                {% endfor %}
                             </div>
                         </div>
 
@@ -528,25 +518,22 @@
                             <!--Footer Column-->
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget news-widget">
-                                    <h2>Recent Posts</h2>
+                                    <h2>Recent Projects</h2>
 
-                                    <article class="post">
-                                        <figure class="post-thumb"><a href="news_feb_29.html"><img
-                                                src="{% static 'images/resource/news-thumb-1.jpg' %}" alt=""></a>
-                                        </figure>
-                                        <div class="text"><a href="news_feb_29.html">Art competition for the celebration
-                                            of Bangabandhu's birth year</a></div>
-                                        <div class="post-info">29 Feb, 2020</div>
-                                    </article>
-
-                                    <article class="post">
-                                        <figure class="post-thumb"><a href="news_feb_12.html"><img
-                                                src="{% static 'images/resource/news-thumb-2.jpg' %}" alt=""></a>
-                                        </figure>
-                                        <div class="text"><a href="news_feb_12.html">200 blankets distributed among the
-                                            children.</a></div>
-                                        <div class="post-info">12 Feb, 2020</div>
-                                    </article>
+                                    {% for project in all_project_list|slice:":2" %}
+                                        <article class="post">
+                                            <figure class="post-thumb"><a
+                                                    href={% url 'project' project.project_id %}><img
+                                                    src="{{ project.project_image.url }}" alt=""></a>
+                                            </figure>
+                                            <div class="text-sm-left">
+                                                <a href={% url 'project' project.project_id %}>
+                                                    {{ project.project_title }}
+                                                </a>
+                                            </div>
+                                            <div class="post-info">{{ project.project_publish_date }}</div>
+                                        </article>
+                                    {% endfor %}
 
                                 </div>
                             </div>

@@ -76,14 +76,16 @@
                     <div class="pull-left logo-box">
                         <div class="logo">
                             <a href="{% url 'index' %}">
-                                <img src="{% static 'images/logo-main.png' %}" alt="" title="" style="height: 80px; width: 100px">
+                                <img src="{% static 'images/logo-main.png' %}" alt="" title=""
+                                     style="height: 80px; width: 100px">
                             </a>
                         </div>
                     </div>
                     <div class="pull-left logo-box">
                         <div class="logo">
                             <a href="{% url 'index' %}">
-                                <img src="{% static 'images/logo-12.png' %}" style="height: 80px; width: 150px" alt="" title="">
+                                <img src="{% static 'images/logo-12.png' %}" style="height: 80px; width: 150px" alt=""
+                                     title="">
                             </a>
                         </div>
                     </div>
@@ -520,23 +522,19 @@
                                 <div class="footer-widget news-widget">
                                     <h2>Recent Posts</h2>
 
-                                    <article class="post">
-                                        <figure class="post-thumb"><a href="blog-single.html"><img
-                                                src="{% static 'images/resource/news-thumb-1.jpg' %}" alt=""></a>
-                                        </figure>
-                                        <div class="text"><a href="blog-single.html">Feeding for the poor people help
-                                            these life.</a></div>
-                                        <div class="post-info">12 Dec, 2018</div>
-                                    </article>
-
-                                    <article class="post">
-                                        <figure class="post-thumb"><a href="blog-single.html"><img
-                                                src="{% static 'images/resource/news-thumb-2.jpg' %}" alt=""></a>
-                                        </figure>
-                                        <div class="text"><a href="blog-single.html">Take care of children for the
-                                            greate serving</a></div>
-                                        <div class="post-info">12 Dec, 2018</div>
-                                    </article>
+                                    {% for news in all_news_list|slice:":2" %}
+                                        <article class="post">
+                                            <figure class="post-thumb"><a href={% url 'news' news.news_id %}><img
+                                                    src="{{ news.news_image.url }}" alt=""></a>
+                                            </figure>
+                                            <div class="text-sm-left">
+                                                <a href={% url 'news' news.news_id %}>
+                                                    {{ news.news_title }}
+                                                </a>
+                                            </div>
+                                            <div class="post-info">{{ news.news_publish_date }}</div>
+                                        </article>
+                                    {% endfor %}
 
                                 </div>
                             </div>
