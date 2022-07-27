@@ -138,7 +138,7 @@
                                             {% endfor %}
                                         </ul>
                                     </li>
-                                    <li><a href="https://forms.gle/Vdeqp8RtsutuWYat5" target="_blank">Join us</a></li>
+                                    <li><a href="{% url 'joinus' %}" target="_blank">Join us</a></li>
                                     <li><a href="{% url 'donate' %}" class="theme-btn donate-btn">Donate Now</a></li>
                                     <li><a href="{% url 'contact' %}">Contact us</a></li>
                                 </ul>
@@ -228,7 +228,7 @@
                                         {% endfor %}
                                     </ul>
                                 </li>
-                                <li><a href="https://forms.gle/Vdeqp8RtsutuWYat5" target="_blank">Join us</a></li>
+                                <li><a href="{% url 'joinus' %}" target="_blank">Join us</a></li>
                                 <li><a href="{% url 'donate' %}" class="theme-btn donate-btn">Donate Now</a></li>
                                 <li><a href="{% url 'contact' %}">Contact us</a></li>
                             </ul>
@@ -326,8 +326,9 @@
                                 each day.
                             </p>
                         </div>
-                        <a align="center" href="https://forms.gle/Vdeqp8RtsutuWYat5" target="_blank"
-                           class="theme-btn btn-style-three">Join Us Now</a>
+                        <a align="center" href="{% url 'joinus' %}" target="_blank" class="theme-btn btn-style-three">
+                            Join Us Now
+                        </a>
                     </div>
                 </div>
 
@@ -578,7 +579,7 @@
                 <br> Become a time hero by volunteering with us. Meet new friends, gain new skills, get <br>
                 happiness and have fun!
             </div>
-            <a href="https://forms.gle/Vdeqp8RtsutuWYat5" target="_blank" class="theme-btn btn-style-five">Join With
+            <a href="{% url 'joinus' %}" target="_blank" class="theme-btn btn-style-five">Join With
                 Us</a>
         </div>
     </section>

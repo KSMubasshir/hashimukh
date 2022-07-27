@@ -5,7 +5,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <title>Hashimukh | Contact Us</title>
+    <title>Hashimukh | Donate</title>
     <!-- Stylesheets -->
     {% load static %}
     <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
@@ -188,7 +188,7 @@
                                         {% endfor %}
                                     </ul>
                                 </li>
-                                <li><a href="https://forms.gle/Vdeqp8RtsutuWYat5" target="_blank">Join us</a></li>
+                                <li><a href="{% url 'joinus' %}" target="_blank">Join us</a></li>
                                 <li class="current"><a href="{% url 'donate' %}" class="theme-btn donate-btn">Donate Now</a></li>
                                 <li><a href="{% url 'contact' %}">Contact us</a></li>
                             </ul>
@@ -277,7 +277,7 @@
                                         {% endfor %}
                                     </ul>
                                 </li>
-                                <li><a href="https://forms.gle/Vdeqp8RtsutuWYat5" target="_blank">Join us</a></li>
+                                <li><a href="{% url 'joinus' %}" target="_blank">Join us</a></li>
                                 <li><a href="{% url 'donate' %}" class="theme-btn donate-btn">Donate Now</a></li>
                                 <li class="current"><a href="{% url 'contact' %}">Contact us</a></li>
                             </ul>

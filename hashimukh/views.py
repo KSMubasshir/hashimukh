@@ -60,3 +60,14 @@ def donate(request):
         'all_project_list': all_project_list
     }
     return HttpResponse(template.render(context, request))
+
+
+def joinus(request):
+    template = loader.get_template('joinus/joinus.html')
+    all_news_list = News.objects.all()
+    all_project_list = Project.objects.all()
+    context = {
+        'all_news_list': all_news_list,
+        'all_project_list': all_project_list
+    }
+    return HttpResponse(template.render(context, request))
