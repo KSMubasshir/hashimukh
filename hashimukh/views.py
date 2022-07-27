@@ -49,3 +49,14 @@ def project(request, project_id):
         'all_project_list': all_project_list
     }
     return render(request, 'projects/project.html', context)
+
+
+def donate(request):
+    template = loader.get_template('donation/donate.html')
+    all_news_list = News.objects.all()
+    all_project_list = Project.objects.all()
+    context = {
+        'all_news_list': all_news_list,
+        'all_project_list': all_project_list
+    }
+    return HttpResponse(template.render(context, request))

@@ -9,6 +9,7 @@ from django.contrib import admin
 urlpatterns = [
     path('', views.index, name='index'),
     path('contact/', views.contact, name='contact'),
+    path('donate/', views.donate, name='donate'),
     path('admin/', admin.site.urls, name='admin'),
     path('news/<int:news_id>', views.news, name='news'),
     path('projects/<int:project_id>', views.project, name='project'),

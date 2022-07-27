@@ -77,20 +77,20 @@
                 <div class="clearfix">
 
                     <div class="pull-left logo-box">
-                        <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/logo-main.png' %}"
-                                                                           alt="" title=""
-                                                                           style="height: 100px; width: 150px"></a>
+                        <div class="logo"><a href="{% url 'index' %}">
+                            <img src="{% static 'images/logo-main.png' %}" alt="" title="" style="height: 100px; width: 150px"></a>
                         </div>
                     </div>
 
                     <div class="pull-left logo-box">
-                        <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/logo-11.png' %}"
-                                                                           alt="" title=""></a>
+                        <div class="logo">
+                            <a href="{% url 'index' %}">
+                                <img src="{% static 'images/logo-11.png' %}" alt="" title="">
+                            </a>
                         </div>
                     </div>
 
                     <div class="nav-outer clearfix">
-
                         <!-- Main Menu -->
                         <nav class="main-menu navbar-expand-md">
                             <div class="navbar-header">
@@ -103,7 +103,6 @@
                                     <span class="icon-bar"></span>
                                 </button>
                             </div>
-
                             <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
                                     <li class="current"><a href="{% url 'index' %}">Home</a></li>
@@ -140,7 +139,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="https://forms.gle/Vdeqp8RtsutuWYat5" target="_blank">Join us</a></li>
-                                    <li><a href="#" class="theme-btn donate-btn">Donate Now</a></li>
+                                    <li><a href="{% url 'donate' %}" class="theme-btn donate-btn">Donate Now</a></li>
                                     <li><a href="{% url 'contact' %}">Contact us</a></li>
                                 </ul>
                             </div>
@@ -150,18 +149,14 @@
                         <div class="outer-box clearfix">
                             <div class="btn-box">
                                 <!--Search Btn-->
-                                <div href="#modal-popup-2" class="navsearch-button xs-modal-popup"><i
-                                        class="icon flaticon-magnifying-glass-1"></i></div>
-
+                                <div href="#modal-popup-2" class="navsearch-button xs-modal-popup">
+                                    <i class="icon flaticon-magnifying-glass-1"></i>
+                                </div>
                                 <!-- Main Menu End-->
-
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
         </div>
         <!--End Header Upper-->
@@ -234,7 +229,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="https://forms.gle/Vdeqp8RtsutuWYat5" target="_blank">Join us</a></li>
-                                <li><a href="#" class="theme-btn donate-btn">Donate Now</a></li>
+                                <li><a href="{% url 'donate' %}" class="theme-btn donate-btn">Donate Now</a></li>
                                 <li><a href="{% url 'contact' %}">Contact us</a></li>
                             </ul>
                         </div>
@@ -262,8 +257,8 @@
 
                         <div class="link-box">
                             <div class="text-center clearfix">
-                                <a href="#" class="theme-btn btn-style-five">Donate Now</a>
-                                <a href="#" class="theme-btn btn-style-six"><span class="txt">learn
+                                <a href="{% url 'donate' %}" class="theme-btn btn-style-five">Donate Now</a>
+                                <a href="{% url 'contact' %}" class="theme-btn btn-style-six"><span class="txt">learn
 											more</span></a>
                             </div>
                         </div>
@@ -280,8 +275,8 @@
 
                         <div class="link-box">
                             <div class="text-center clearfix">
-                                <a href="donate.html" class="theme-btn btn-style-five">Donate Now</a>
-                                <a href="about.html" class="theme-btn btn-style-six"><span class="txt">learn
+                                <a href="{% url 'donate' %}" class="theme-btn btn-style-five">Donate Now</a>
+                                <a href="{% url 'contact' %}" class="theme-btn btn-style-six"><span class="txt">learn
 											more</span></a>
                             </div>
                         </div>
@@ -298,15 +293,14 @@
 
                         <div class="link-box">
                             <div class="text-center clearfix">
-                                <a href="donate.html" class="theme-btn btn-style-five">Donate Now</a>
-                                <a href="about.html" class="theme-btn btn-style-six"><span class="txt">learn
+                                <a href="{% url 'donate' %}" class="theme-btn btn-style-five">Donate Now</a>
+                                <a href="{% url 'contact' %}" class="theme-btn btn-style-six"><span class="txt">learn
 											more</span></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
         <!--Scroll Dwwn Btn-->
