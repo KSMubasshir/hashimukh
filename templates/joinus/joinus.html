@@ -54,7 +54,7 @@
                     <div class="top-right col-lg-7 col-md-12 col-sm-12">
                         <div class="question">
                             Do you have any question?
-                            <a href="tel: +8801613244004">+8801613244004</a>
+                            <a href="tel: +8801794146555">+8801794146555</a>, <a href="tel: +8801685794498">+8801685794498</a>
                         </div>
                         <!--Social Box-->
                         <ul class="social-box">
@@ -110,7 +110,7 @@
                             <div class="upper-column info-box">
                                 <div class="icon-box"><span class="flaticon-envelope"></span></div>
                                 <ul>
-                                    <li><span>Email: </span> <br> <a href="mailto:info@hashimukhbd.com">info@hashimukhbd.com</a>
+                                    <li style="text-transform: none"><span>Email: </span> <br> <a href="mailto:hashimukh.socialwelfare.bd@gmail.com">hashimukh.socialwelfare.bd<br>@gmail.com</a>
                                     </li>
                                 </ul>
                             </div>
@@ -119,8 +119,10 @@
                             <div class="upper-column info-box">
                                 <div class="icon-box"><span class="flaticon-phone-call"></span></div>
                                 <ul>
-                                    <li><span>Phone: </span> <br> <a href="tel: +8801613244004">
-                                        +8801613244004</a></li>
+                                    <li><span>Phone: </span>
+                                        <br> <a href="tel: +8801794146555">+8801794146555</a>
+                                        <br> <a href="tel: +8801685794498">+8801685794498</a>
+                                    </li>
                                 </ul>
                             </div>
 
@@ -547,47 +549,6 @@
     <!-- End Donation Section -->
 
 
-    <!--Clients Section-->
-    <section class="clients-section">
-        <div class="outer-container">
-
-            <div class="sponsors-outer">
-                <!--Sponsors Carousel-->
-                <ul class="sponsors-carousel owl-carousel owl-theme">
-                    <li class="slide-item">
-                        <figure class="image-box"><a href="#"><img src="{% static 'images/clients/1.png' %}" alt=""></a>
-                        </figure>
-                    </li>
-                    <li class="slide-item">
-                        <figure class="image-box"><a href="#"><img src="{% static 'images/clients/2.png' %}" alt=""></a>
-                        </figure>
-                    </li>
-                    <li class="slide-item">
-                        <figure class="image-box"><a href="#"><img src="{% static 'images/clients/3.png' %}" alt=""></a>
-                        </figure>
-                    </li>
-                    <li class="slide-item">
-                        <figure class="image-box"><a href="#"><img src="{% static 'images/clients/4.png' %}" alt=""></a>
-                        </figure>
-                    </li>
-                    <li class="slide-item">
-                        <figure class="image-box"><a href="#"><img src="{% static 'images/clients/5.png' %}" alt=""></a>
-                        </figure>
-                    </li>
-                    <li class="slide-item">
-                        <figure class="image-box"><a href="#"><img src="{% static 'images/clients/1.png' %}" alt=""></a>
-                        </figure>
-                    </li>
-                    <li class="slide-item">
-                        <figure class="image-box"><a href="#"><img src="{% static 'images/clients/2.png' %}" alt=""></a>
-                        </figure>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-    <!--End Clients Section-->
 
     <!--Main Footer-->
     <footer class="main-footer style-two" style="background-image:url({% static 'images/background/8.jpg' %})">
@@ -623,20 +584,6 @@
                                 </div>
                             </div>
 
-                            <!--Footer Column-->
-                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
-                                <div class="footer-widget links-widget">
-                                    <h2>Our Projects</h2>
-                                    <ul class="footer-list">
-                                        <li><a href="#">Water Surve</a></li>
-                                        <li><a href="#">Education For All</a></li>
-                                        <li><a href="#">Treatment</a></li>
-                                        <li><a href="#">Food Surve</a></li>
-                                        <li><a href="#">Cloth Surve</a></li>
-                                        <li><a href="#">Selter Project</a></li>
-                                    </ul>
-                                </div>
-                            </div>
 
                         </div>
                     </div>
@@ -672,12 +619,8 @@
                                 <div class="footer-widget links-widget">
                                     <h2>Quick Links</h2>
                                     <ul class="footer-list">
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Donation Form</a></li>
-                                        <li><a href="#">Projects</a></li>
-                                        <li><a href="#">Events</a></li>
-                                        <li><a href="#">Coseses</a></li>
-                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="{% url 'donate' %}">Donate Now</a></li>
+                                        <li><a href="{% url 'contact' %}">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
