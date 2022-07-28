@@ -21,6 +21,102 @@
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+
+        /*************** home page slide ***************/
+        .homepage-slide {
+            width: 100%;
+            min-height: 390px;
+        }
+
+        .homepage-slide-container {
+            overflow: hidden;
+            width: 100%;
+            min-height: 390px;
+            position: relative;
+        }
+
+
+        .homepage-slide-container::after {
+            content: "";
+            width: 50px;
+            height: 50px;
+            border-left: 80px solid transparent;
+            border-right: 80px solid transparent;
+            border-top: 50px solid #fff;
+            position: absolute;
+            z-index: 200;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 0%);
+        }
+
+
+        .homepage-slide-content {
+            width: 25%;
+            float: left;
+            min-height: 390px;
+            overflow: hidden;
+            position: relative;
+        }
+
+
+        .background-slide-image {
+            width: 100%;
+            height: 390px;
+            position: absolute;
+            z-index: 10;
+            filter: grayscale(100%);
+        }
+
+
+        .homepage-slide-content:hover .home-slide-overly {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .homepage-slide-content:hover .background-slide-image {
+            filter: grayscale(0%);
+        }
+
+
+        .home-slide-overly {
+            width: 100%;
+            height: 390px;
+            position: absolute;
+            z-index: 20;
+            background-color: rgba(0, 0, 0, 0.7);
+            transition: all 0.5s ease 0s;
+        }
+
+
+        .home-slide-overly img {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            bottom: 20%;
+        }
+
+
+        .home-slide-overly h4 {
+            position: absolute;
+            bottom: 55%;
+            text-align: center;
+            display: block;
+            width: 100%;
+            font-size: 22px;
+            color: white;
+        }
+
+        .slider-home-image:hover .home-slide-overly {
+            left: 0;
+            width: 100%;
+            transition: all 0.5s ease 0s;
+        }
+
+        .custom-link:hover {
+            background-color: #0A81EC !important;
+        }
+    </style>
 
     <!--[if lt IE 9]>
 {#    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>#}
@@ -108,13 +204,13 @@
                                 <ul class="navigation clearfix">
                                     <li class="current"><a href="{% url 'index' %}">Home</a></li>
                                     <li class="dropdown">
-                                        <a href="#">Projects</a>
+                                        <a href="#">Where We Focus</a>
                                         <ul>
-                                            {% for project in all_project_list %}
+                                            {% for focus in all_focus_list %}
                                                 <li>
                                                     <div class="card">
-                                                        <a href={% url 'project' project.project_id %}>
-                                                            {{ project.project_title }}
+                                                        <a href="#">
+                                                            {{ focus.focus_title }}
                                                         </a>
                                                     </div>
                                                 </li>
@@ -196,14 +292,14 @@
                             <ul class="navigation clearfix">
                                 <li class="current"><a href="{% url 'index' %}">Home</a></li>
                                 <li class="dropdown">
-                                    <a href="#">Projects</a>
+                                    <a href="#">Where We Focus</a>
                                     <ul>
-                                        {% for project in all_project_list %}
+                                        {% for focus in all_focus_list %}
                                             <li>
                                                 <div class="card">
                                                     <div class="text">
-                                                        <a href={% url 'project' project.project_id %}>
-                                                            {{ project.project_title }}
+                                                        <a href="#">
+                                                            {{ focus.focus_title }}
                                                         </a>
                                                     </div>
                                                 </div>
@@ -342,7 +438,7 @@
                         <div class="icon-box">
                             <span class="icon flaticon-book"></span>
                         </div>
-                        <h3>Ensure basic education for the young members of the society</h3>
+                        <h5>Ensure basic education for the young members of the society</h5>
                     </div>
                 </div>
 
@@ -353,7 +449,7 @@
                         <div class="icon-box">
                             <span class="icon flaticon-award"></span>
                         </div>
-                        <h3>Ensure capacity or skill development</h3>
+                        <h5>Ensure capacity or skill development</h5>
                     </div>
                 </div>
 
@@ -363,7 +459,7 @@
                         <div class="icon-box">
                             <span class="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span>
                         </div>
-                        <h3>Support in an emergency crisis situation in our country</h3>
+                        <h5>Support in an emergency crisis situation in our country</h5>
                     </div>
                 </div>
 
@@ -373,8 +469,8 @@
                         <div class="icon-box">
                             <span class="icon flaticon-donation-2"></span>
                         </div>
-                        <h3>Motivate the youth of our country to actively participate in volunteering work to give back
-                            to the community</h3>
+                        <h5>Motivate the youth of our country to actively participate in volunteering work to give back
+                            to the community</h5>
                     </div>
                 </div>
 
@@ -385,8 +481,8 @@
                         <div class="icon-box">
                             <span class="icon flaticon-world"></span>
                         </div>
-                        <h3>Make young members of society well aware of our history, culture, and customs and make them
-                            compassionate</h3>
+                        <h5>Make young members of society well aware of our history, culture, and customs and make them
+                            compassionate</h5>
                     </div>
                 </div>
 
@@ -396,81 +492,39 @@
                         <div class="icon-box">
                             <span class="icon flaticon-house-1"></span>
                         </div>
-                        <h3>Build confidence among the slum families and help them to dream for a better life</h3>
+                        <h5>Build confidence among the slum families and help them to dream for a better life</h5>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery-section">
-        <div class="auto-container">
-            <!-- Sec Title -->
+        <!-- Gallery Section -->
+        <section class="homepage-slide-section">
             <div class="sec-title centered">
-                <h2><span class="theme_color">Our</span> Projects</h2>
-                <div class="text">We have successfully completed 500+ projects <br>catering to the needs of the
-                    underprivileged people
-                </div>
+                <h2><span class="theme_color">Where We Focus</span></h2>
             </div>
-
-            <!--MixitUp Galery-->
-            <div class="mixitup-gallery">
-                <div class="filter-list row clearfix">
-                    {% for project in all_project_list %}
-                        <!-- Gallery Block -->
-                        <div class="gallery-block mix water charity col-lg-4 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image">
-
-                                    <figure>
-                                        <img src="{{ project.project_image.url }}" alt=""/>
-                                        <figcaption>
-                                            {{ project.project_title }}
-                                        </figcaption>
-                                    </figure>
-
-                                    <div class="overlay-box">
-                                        <div class="overlay-inner">
-
-                                            <h3>
-                                                <a href="{% url 'project' project.project_id %}">
-                                                    {{ project.project_title }}
-                                                </a>
-                                            </h3>
-
-                                            <div class="text">
-                                                {{ project.project_tagline }}
-                                            </div>
-
-                                            <ul class="links">
-                                                <li>
-                                                    <a href="{% url 'project' project.project_id %}" target="_blank"
-                                                       class="icon flaticon-web-link"></a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ project.project_image.url }}"
-                                                       data-fancybox="gallery"
-                                                       data-caption="" class="icon flaticon-full-screen"></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="homepage-slide-container">
+                {% for focus in all_focus_list %}
+                    <!--start -->
+                    <div class="homepage-slide-content">
+                        <img class="background-slide-image" src="{{ focus.focus_image.url }}"
+                             alt="Slide Image 1">
+                        <a href="#" target="_blank" class="slider-home-image">
+                            <div class="home-slide-overly">
+                                <h4>{{ focus.focus_title }}</h4>
+                                <br>
+                                <img src="{{ focus.focus_icon.url }}"  style="height: 100px;width: 100px;bottom: 18.5%"></img>
                             </div>
-                        </div>
-                    {% endfor %}
-                </div>
+                        </a>
+                    </div>
+                    <!--end -->
+                {% endfor %}
+
+
             </div>
-
-            <div class="load-more-btn text-center">
-                <a href="#" class="theme-btn btn-style-five">load more</a>
-            </div>
-
-        </div>
-    </section>
-    <!-- End Gallery Section -->
-
+        </section>
+        <!-- End Gallery Section -->
 
     <!-- Gallery Section -->
     <section class="gallery-section">
@@ -786,11 +840,13 @@
                                                 <br>Dhanmondi, Dhaka- 1205
                                             </a>
                                         </li>
-                                        <li style="text-transform: none">Email: <br><a href="mailto:hashimukh.socialwelfare.bd@gmail.com">hashimukh.socialwelfare.bd@gmail.com</a>
+                                        <li style="text-transform: none">Email: <br><a
+                                                href="mailto:hashimukh.socialwelfare.bd@gmail.com">hashimukh.socialwelfare.bd@gmail.com</a>
                                         </li>
                                         <li>
                                             Phone:
-                                            <br><a href="tel: +8801794146555">+8801794146555</a>, <a href="tel: +8801685794498">+8801685794498</a>
+                                            <br><a href="tel: +8801794146555">+8801794146555</a>, <a
+                                                href="tel: +8801685794498">+8801685794498</a>
                                         </li>
                                     </ul>
                                 </div>

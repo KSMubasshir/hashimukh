@@ -24,3 +24,13 @@ class Project(models.Model):
 
     def __str__(self):
         return self.project_title
+
+
+class Focus(models.Model):
+    focus_id = models.AutoField(primary_key=True)
+    focus_title = models.TextField()
+    focus_image = models.ImageField(upload_to='images')
+    focus_icon = models.ImageField(upload_to='images', default="")
+
+    def __str__(self):
+        return self.focus_title

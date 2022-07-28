@@ -2,16 +2,18 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.template import loader
 from django.views.generic.edit import CreateView
-from .models import News, Project
+from .models import News, Project, Focus
 
 
 def index(request):
     template = loader.get_template('home/index.html')
     all_news_list = News.objects.all()
     all_project_list = Project.objects.all()
+    all_focus_list = Focus.objects.all()
     context = {
         'all_news_list': all_news_list,
-        'all_project_list': all_project_list
+        'all_project_list': all_project_list,
+        'all_focus_list': all_focus_list
     }
     return HttpResponse(template.render(context, request))
 
