@@ -416,20 +416,6 @@
 
             <!--MixitUp Galery-->
             <div class="mixitup-gallery">
-
-                <!--Filter-->
-                <div class="filters clearfix">
-
-                    <ul class="filter-tabs filter-btns text-center clearfix">
-                        <li class="active filter" data-role="button" data-filter="all">All</li>
-                        <li class="filter" data-role="button" data-filter=".homeless">HOMELESS</li>
-                        {#                        <li class="filter" data-role="button" data-filter=".charity">CHARITY</li>#}
-                        <li class="filter" data-role="button" data-filter=".food">FOOD HELP</li>
-                        <li class="filter" data-role="button" data-filter=".water">CLEAN WATER</li>
-                    </ul>
-
-                </div>
-
                 <div class="filter-list row clearfix">
                     {% for project in all_project_list %}
                         <!-- Gallery Block -->
@@ -468,16 +454,12 @@
                                                        data-caption="" class="icon flaticon-full-screen"></a>
                                                 </li>
                                             </ul>
-
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     {% endfor %}
-
-
                 </div>
             </div>
 
@@ -489,12 +471,27 @@
     </section>
     <!-- End Gallery Section -->
 
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="auto-container">
+
+            <div class="mixitup-gallery">
+                <div class="filter-list row clearfix">
+                    <img src="{% static 'images/resource/Impact - Graph.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Gallery Section -->
+
+
     <!-- News Section -->
     <section class="news-section-two" style="background-image: url({% static 'images/background/7.jpg' %})">
         <div class="auto-container">
             <!-- Sec Title -->
             <div class="sec-title light">
-                <h2><span class="theme_color">Our Latest </span> News</h2>
+                <h2><span class="theme_color">Latest </span> News</h2>
             </div>
             <div class="news-carousel owl-carousel owl-theme">
 
