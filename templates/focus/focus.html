@@ -155,16 +155,14 @@
                             <ul class="navigation clearfix">
                                 <li><a href="{% url 'index' %}">Home</a></li>
                                 <li class="dropdown">
-                                    <a href="#">Projects</a>
+                                    <a href="#">Where We Focus</a>
                                     <ul>
-                                        {% for project in all_project_list %}
+                                        {% for focus in all_focus_list %}
                                             <li>
                                                 <div class="card">
-                                                    <div class="text">
-                                                        <a href={% url 'project' project.project_id %}>
-                                                            {{ project.project_title }}
-                                                        </a>
-                                                    </div>
+                                                    <a href="{% url 'focus' focus.focus_id %}">
+                                                        {{ focus.focus_title }}
+                                                    </a>
                                                 </div>
                                             </li>
                                         {% endfor %}
@@ -302,15 +300,13 @@
     <!--End Page Title-->
 
 
-
-
     <!--Sidebar Page Container-->
     <div class="sidebar-page-container">
         <div class="auto-container">
             <div class="row clearfix">
                 <div class="content-side col-lg-8 col-md-12 col-sm-12">
                     <div>
-                    <h1 style="text-align: center"><b>{{ focus.focus_title }}</b></h1>
+                        <h1 style="text-align: center"><b>{{ focus.focus_title }}</b></h1>
                     </div>
                     <div class="text">
                         {{ focus.focus_content }}
@@ -320,17 +316,16 @@
                         <div class="row">
                             <div class="news-detail">
                                 <div class="inner-box">
-                                    {% if project.project_image %}
-                                        <div class="image">
-                                            <img src="{{ project.project_image.url }}" alt=""/>
-                                        </div>
-                                    {% endif %}
-
                                     <div class="lower-content">
                                         <div class="content">
                                             <ul class="post-meta">
                                             </ul>
                                             <h3>{{ project.project_title }}</h3>
+                                            {% if project.project_image %}
+                                                <div class="image">
+                                                    <img src="{{ project.project_image.url }}" alt=""/>
+                                                </div>
+                                            {% endif %}
                                             <div class="text">
                                                 {{ project.project_content }}
                                             </div>
