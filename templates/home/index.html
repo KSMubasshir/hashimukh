@@ -209,7 +209,7 @@
                                             {% for focus in all_focus_list %}
                                                 <li>
                                                     <div class="card">
-                                                        <a href="#">
+                                                        <a href="{% url 'focus' focus.focus_id %}">
                                                             {{ focus.focus_title }}
                                                         </a>
                                                     </div>
@@ -510,7 +510,7 @@
                     <div class="homepage-slide-content">
                         <img class="background-slide-image" src="{{ focus.focus_image.url }}"
                              alt="Slide Image 1">
-                        <a href="#" target="_blank" class="slider-home-image">
+                        <a href="{% url 'focus' focus.focus_id %}" target="_blank" class="slider-home-image">
                             <div class="home-slide-overly">
                                 <h4>{{ focus.focus_title }}</h4>
                                 <br>

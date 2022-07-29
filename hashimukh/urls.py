@@ -14,6 +14,7 @@ urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
     path('news/<int:news_id>', views.news, name='news'),
     path('projects/<int:project_id>', views.project, name='project'),
+    path('focus/<int:focus_id>', views.focus, name='focus'),
 ]
 
 # add this line to link the static files in the url

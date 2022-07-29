@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.template import loader
 from django.views.generic.edit import CreateView
-from .models import News, Project, Focus
+from .models import News, Project, Focus, FocussedProject
 
 
 def index(request):
@@ -73,3 +73,17 @@ def joinus(request):
         'all_project_list': all_project_list
     }
     return HttpResponse(template.render(context, request))
+
+
+def focus(request, focus_id):
+    focus = Focus.objects.get(focus_id=focus_id)
+    all_news_list = News.objects.all()
+    all_project_list = Project.objects.all()
+    focussed_projects = FocussedProject.objects.filter(focus_id=focus_id)
+    context = {
+        'focus': focus,
+        'all_news_list': all_news_list,
+        'all_project_list': all_project_list,
+        'focussed_projects': focussed_projects
+    }
+    return render(request, 'focus/focus.html', context)
