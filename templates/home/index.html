@@ -204,7 +204,7 @@
                                 <ul class="navigation clearfix">
                                     <li class="current"><a href="{% url 'index' %}">Home</a></li>
                                     <li class="dropdown">
-                                        <a href="#">Where We Focus</a>
+                                        <a href="{% url 'index' %}">Where We Focus</a>
                                         <ul>
                                             {% for focus in all_focus_list %}
                                                 <li>
@@ -218,7 +218,7 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#">Events</a>
+                                        <a href="{% url 'index' %}">Events</a>
                                         <ul>
                                             {% for news in all_news_list %}
                                                 <li>
@@ -292,7 +292,7 @@
                             <ul class="navigation clearfix">
                                 <li class="current"><a href="{% url 'index' %}">Home</a></li>
                                 <li class="dropdown">
-                                    <a href="#">Where We Focus</a>
+                                    <a href="{% url 'index' %}">Where We Focus</a>
                                     <ul>
                                         {% for focus in all_focus_list %}
                                             <li>
@@ -308,7 +308,7 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#">Events</a>
+                                    <a href="{% url 'index' %}">Events</a>
                                     <ul>
                                         {% for news in all_news_list %}
                                             <li>
