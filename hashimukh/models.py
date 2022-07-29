@@ -50,4 +50,24 @@ class FocussedProject(models.Model):
         return self.project_title
 
 
+class EventsLevelOne(models.Model):
+    event_level_one_id = models.AutoField(primary_key=True)
+    event_publish_date = models.DateField(null=True, blank=True)
+    event_image = models.ImageField(upload_to='images', null=True, blank=True)
+    event_title = models.TextField()
+    event_content = models.TextField(null=True, blank=True)
 
+    def __str__(self):
+        return self.event_title
+
+
+class EventsLevelTwo(models.Model):
+    event_level_two_id = models.AutoField(primary_key=True)
+    event_publish_date = models.DateField(null=True, blank=True)
+    event_image = models.ImageField(upload_to='images', null=True, blank=True)
+    event_title = models.TextField()
+    event_content = models.TextField()
+    event_level_one_id = models.ForeignKey(EventsLevelOne, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.event_title

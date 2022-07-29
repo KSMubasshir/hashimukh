@@ -220,14 +220,12 @@
                                     <li class="dropdown">
                                         <a href="{% url 'index' %}">Events</a>
                                         <ul>
-                                            {% for news in all_news_list %}
+                                            {% for event_level_one in events_level_one_list %}
                                                 <li>
                                                     <div class="card">
                                                         <div class="text">
-                                                            {{ news.news_publish_date }}
-                                                            <br>
-                                                            <a href={% url 'news' news.news_id %}>
-                                                                {{ news.news_title }}
+                                                            <a href="#">
+                                                                {{ event_level_one.event_title }}
                                                             </a>
                                                         </div>
                                                     </div>
@@ -310,14 +308,12 @@
                                 <li class="dropdown">
                                     <a href="{% url 'index' %}">Events</a>
                                     <ul>
-                                        {% for news in all_news_list %}
+                                        {% for event_level_one in events_level_one_list %}
                                             <li>
                                                 <div class="card">
                                                     <div class="text">
-                                                        {{ news.news_publish_date }}
-                                                        <br>
-                                                        <a href={% url 'news' news.news_id %}>
-                                                            {{ news.news_title }}
+                                                        <a href="#">
+                                                            {{ event_level_one.event_title }}
                                                         </a>
                                                     </div>
                                                 </div>
@@ -499,32 +495,33 @@
         </div>
     </section>
 
-        <!-- Gallery Section -->
-        <section class="homepage-slide-section">
-            <div class="sec-title centered">
-                <h2><span class="theme_color">Where We Focus</span></h2>
-            </div>
-            <div class="homepage-slide-container">
-                {% for focus in all_focus_list %}
-                    <!--start -->
-                    <div class="homepage-slide-content">
-                        <img class="background-slide-image" src="{{ focus.focus_image.url }}"
-                             alt="Slide Image 1">
-                        <a href="{% url 'focus' focus.focus_id %}" target="_blank" class="slider-home-image">
-                            <div class="home-slide-overly">
-                                <h4>{{ focus.focus_title }}</h4>
-                                <br>
-                                <img src="{{ focus.focus_icon.url }}"  style="height: 100px;width: 100px;bottom: 18.5%"></img>
-                            </div>
-                        </a>
-                    </div>
-                    <!--end -->
-                {% endfor %}
+    <!-- Gallery Section -->
+    <section class="homepage-slide-section">
+        <div class="sec-title centered">
+            <h2><span class="theme_color">Where We Focus</span></h2>
+        </div>
+        <div class="homepage-slide-container">
+            {% for focus in all_focus_list %}
+                <!--start -->
+                <div class="homepage-slide-content">
+                    <img class="background-slide-image" src="{{ focus.focus_image.url }}"
+                         alt="Slide Image 1">
+                    <a href="{% url 'focus' focus.focus_id %}" target="_blank" class="slider-home-image">
+                        <div class="home-slide-overly">
+                            <h4>{{ focus.focus_title }}</h4>
+                            <br>
+                            <img src="{{ focus.focus_icon.url }}"
+                                 style="height: 100px;width: 100px;bottom: 18.5%"></img>
+                        </div>
+                    </a>
+                </div>
+                <!--end -->
+            {% endfor %}
 
 
-            </div>
-        </section>
-        <!-- End Gallery Section -->
+        </div>
+    </section>
+    <!-- End Gallery Section -->
 
     <!-- Gallery Section -->
     <section class="gallery-section">

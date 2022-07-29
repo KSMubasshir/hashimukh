@@ -1,12 +1,14 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import News, Project, Focus, FocussedProject
+from .models import News, Project, Focus, FocussedProject, EventsLevelOne, EventsLevelTwo
 
 admin.site.register(News)
 admin.site.register(Project)
 admin.site.register(Focus)
 admin.site.register(FocussedProject)
+admin.site.register(EventsLevelOne)
+admin.site.register(EventsLevelTwo)
 
 
 class AuthorAdmin(admin.ModelAdmin):
