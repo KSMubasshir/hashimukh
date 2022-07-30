@@ -23,8 +23,6 @@ def index(request):
         'all_focus_list': all_focus_list,
         'events': events
     }
-
-    print(events)
     return HttpResponse(template.render(context, request))
 
 
