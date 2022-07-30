@@ -305,13 +305,13 @@
             <div class="row clearfix">
                 <!--Title -->
                 <div class="title-column col-lg-6 col-md-12 col-sm-12">
-                    <h1>Project Detail</h1>
+                    <h1>Event Detail</h1>
                 </div>
                 <!--Bread Crumb -->
                 <div class="breadcrumb-column col-lg-6 col-md-12 col-sm-12">
                     <ul class="bread-crumb clearfix">
                         <li><a href="{% url 'index' %}"><span class="icon fas fa-home"></span>Home</a></li>
-                        <li class="active"><span class="icon fas fa-arrow-alt-circle-right"></span>Project Detail</li>
+                        <li class="active"><span class="icon fas fa-arrow-alt-circle-right"></span>Event Detail</li>
                     </ul>
                 </div>
             </div>
@@ -326,12 +326,12 @@
             <div class="row clearfix">
                 <div class="content-side col-lg-8 col-md-12 col-sm-12">
                     <div>
-                        <h1 style="text-align: center"><b>{{ focus.focus_title }}</b></h1>
+                        <h1 style="text-align: center"><b>{{ event_level_one.event_title }}</b></h1>
                     </div>
                     <div class="text">
                         {{ focus.focus_content }}
                     </div>
-                    {% for project in focussed_projects %}
+                    {% for event in events_level_two %}
                         <!--Content Side-->
                         <div class="row">
                             <div class="news-detail">
@@ -340,22 +340,20 @@
                                         <div class="content">
                                             <ul class="post-meta">
                                             </ul>
-                                            <h3>{{ project.project_title }}</h3>
-                                            {% if project.project_image %}
+                                            <h3>{{ event.event_title }}</h3>
+                                            {% if event.event_image %}
                                                 <div class="image">
-                                                    <img src="{{ project.project_image.url }}" alt=""/>
+                                                    <img src="{{ event.event_image.url }}" alt=""/>
                                                 </div>
                                             {% endif %}
                                             <div class="text">
-                                                {{ project.project_content }}
+                                                {{ event.event_content }}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
                     {% endfor %}
                 </div>
 

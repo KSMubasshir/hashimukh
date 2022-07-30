@@ -169,6 +169,7 @@ def focus(request, focus_id):
 
 def event(request, event_level_one_id):
     event_level_one = EventsLevelOne.objects.get(event_level_one_id=event_level_one_id)
+    events_level_two = EventsLevelTwo.objects.filter(event_level_one_id_id=event_level_one_id)
     all_news_list = News.objects.all()
     all_project_list = Project.objects.all()
     all_focus_list = Focus.objects.all()
@@ -183,6 +184,7 @@ def event(request, event_level_one_id):
         events.append(event)
     context = {
         'event_level_one': event_level_one,
+        'events_level_two': events_level_two,
         'all_news_list': all_news_list,
         'all_project_list': all_project_list,
         'all_focus_list': all_focus_list,
