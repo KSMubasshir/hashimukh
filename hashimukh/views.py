@@ -176,11 +176,11 @@ def event(request, event_level_one_id):
 
     events_level_one_list = EventsLevelOne.objects.all()
     events = []
-    for event_level_one in events_level_one_list:
+    for event_level_one_itr in events_level_one_list:
         event = {}
-        event['event_level_one'] = event_level_one
+        event['event_level_one'] = event_level_one_itr
         event['events_level_two'] = EventsLevelTwo.objects.filter(
-            event_level_one_id_id=event_level_one.event_level_one_id)
+            event_level_one_id_id=event_level_one_itr.event_level_one_id)
         events.append(event)
     context = {
         'event_level_one': event_level_one,
