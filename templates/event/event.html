@@ -169,34 +169,34 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                        <a href="{% url 'index' %}">Events</a>
-                                        <ul>
-                                            {% for event in events %}
-                                                <li class="dropdown">
-                                                    <a href={% url 'event' event.event_level_one.event_level_one_id %}>
-                                                        {{ event.event_level_one.event_title }}
-                                                    </a>
-                                                    <ul>
-                                                        <li class="dropdown">
-                                                            <ul>
-                                                                {% for events_level_two in event.events_level_two %}
-                                                                    <li>
-                                                                        <div class="card">
-                                                                            <div class="text">
-                                                                                <a href={% url 'event' event.event_level_one.event_level_one_id %}>
-                                                                                    {{ events_level_two.event_title }}
-                                                                                </a>
-                                                                            </div>
+                                    <a href="{% url 'index' %}">Events</a>
+                                    <ul>
+                                        {% for event in events %}
+                                            <li class="dropdown">
+                                                <a href={% url 'event' event.event_level_one.event_level_one_id %}>
+                                                    {{ event.event_level_one.event_title }}
+                                                </a>
+                                                <ul>
+                                                    <li class="dropdown">
+                                                        <ul>
+                                                            {% for events_level_two in event.events_level_two %}
+                                                                <li>
+                                                                    <div class="card">
+                                                                        <div class="text">
+                                                                            <a href={% url 'event' event.event_level_one.event_level_one_id %}>
+                                                                                {{ events_level_two.event_title }}
+                                                                            </a>
                                                                         </div>
-                                                                    </li>
-                                                                {% endfor %}
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            {% endfor %}
-                                        </ul>
-                                    </li>
+                                                                    </div>
+                                                                </li>
+                                                            {% endfor %}
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
                                 <li><a href="{% url 'joinus' %}" target="_blank">Join us</a></li>
                                 <li><a href="{% url 'donate' %}" class="theme-btn donate-btn">Donate Now</a></li>
                                 <li><a href="{% url 'contact' %}">Contact us</a></li>
@@ -256,34 +256,34 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                        <a href="{% url 'index' %}">Events</a>
-                                        <ul>
-                                            {% for event in events %}
-                                                <li class="dropdown">
-                                                    <a href={% url 'event' event.event_level_one.event_level_one_id %}>
-                                                        {{ event.event_level_one.event_title }}
-                                                    </a>
-                                                    <ul>
-                                                        <li class="dropdown">
-                                                            <ul>
-                                                                {% for events_level_two in event.events_level_two %}
-                                                                    <li>
-                                                                        <div class="card">
-                                                                            <div class="text">
-                                                                                <a href={% url 'event' event.event_level_one.event_level_one_id %}>
-                                                                                    {{ events_level_two.event_title }}
-                                                                                </a>
-                                                                            </div>
+                                    <a href="{% url 'index' %}">Events</a>
+                                    <ul>
+                                        {% for event in events %}
+                                            <li class="dropdown">
+                                                <a href={% url 'event' event.event_level_one.event_level_one_id %}>
+                                                    {{ event.event_level_one.event_title }}
+                                                </a>
+                                                <ul>
+                                                    <li class="dropdown">
+                                                        <ul>
+                                                            {% for events_level_two in event.events_level_two %}
+                                                                <li>
+                                                                    <div class="card">
+                                                                        <div class="text">
+                                                                            <a href={% url 'event' event.event_level_one.event_level_one_id %}>
+                                                                                {{ events_level_two.event_title }}
+                                                                            </a>
                                                                         </div>
-                                                                    </li>
-                                                                {% endfor %}
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            {% endfor %}
-                                        </ul>
-                                    </li>
+                                                                    </div>
+                                                                </li>
+                                                            {% endfor %}
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
                                 <li><a href="{% url 'joinus' %}" target="_blank">Join us</a></li>
                                 <li><a href="{% url 'donate' %}" class="theme-btn donate-btn">Donate Now</a></li>
                                 <li><a href="{% url 'contact' %}">Contact us</a></li>
@@ -346,6 +346,7 @@
                                                     <img src="{{ event.event_image.url }}" alt=""/>
                                                 </div>
                                             {% endif %}
+                                            <div style="height: 10px"></div>
                                             <div class="text" style="font-size: large">
                                                 {{ event.event_content }}
                                             </div>
